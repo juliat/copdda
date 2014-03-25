@@ -6,6 +6,9 @@ body {
   line-height: 1.5;
   background: #ccc;
 }
+h1, h2 {
+  line-height: 1.1;
+}
 .floor {
   padding: 1em 23%;
   background: white;
