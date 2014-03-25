@@ -1,31 +1,42 @@
-/* constructor for pager object */
-function Pager(numPages) {
-  /* default page to 0 */
-  this.currentPage = 0;
-  this.numPages = numPages;
-
-  /* defining next and previous methods for the Pager object */
-  next: function() {
-    /* go to next page */
-    if (this.currentPage < numPages) {
-      this.currentPage--;
+$(document).ready(function() {
+  var ascensor = $('#pagesWrapper').ascensor(
+    {direction: 'x',
+     height: '90%',
+     ascensorFloorName: [
+     'intro',
+     'whoIsThisFor',
+     'whatIsCOPD',
+     'treatingCOPD',
+     'whyDoIHaveAChoice',
+     'floor6'
+     ],
     }
-  }
-  prev: function() {
-    /* go to last page */
-    if (this.currentPage > 0) {
-      this.currentPage++;
-    }
-  }
-}
+  );
+  var ascensorInstance = $('#pagesWrapper').data('ascensor');
 
-/* self invoking anonymous function to avoid creating
-   stuff that has global scope */
-(function(){
-  Mousetrap.bind('right', function(e){
-    pager.nextPage();
+  // for links
+  $(".prev").click(function() {
+    ascensorInstance.prev();
   });
-  Mousetrap.bind('left', function(e){
-    pager.prevPage();
+
+  $(".next").click(function() {
+    ascensorInstance.next();
   });
-})();
+
+  // to update progress bar
+  /* make the progress bar link to different content */
+  $(".progress li").click(function(event, index) {
+    ascensorInstance.scrollToFloor($(this).index());
+  });
+
+
+  /* docs on the :eq function of jquery https://api.jquery.com/eq/ */
+  $(".progress li:eq("+ ascensor.data("current-floor") +")").addClass("selected");
+
+  ascensor.on("scrollStart", function(event, floor){
+    $(".progress li").removeClass("selected");
+    console.log(floor.to);
+    $(".progress li:eq("+floor.to+")").addClass("selected");
+  });
+
+});

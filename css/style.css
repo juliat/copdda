@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 1.3em;
+  line-height: 1.5;
+  background: #ccc;
+}
+.floor {
+  padding: 1em 23%;
+  background: white;
+}
+.floor.wide {
+  padding: 1em 8%;
+}
+.footer {
+  height: 10%;
+  position: fixed;
+  bottom: 0;
+}
+.progress li {
+  display: inline-block;
+  background-color: white;
+  color: white;
+  padding: 0.25em 0.5em;
+  border-radius: 3px;
+}
+.progress li.selected {
+  color: black;
+  background-color: black;
+}
+/* two column layout */
+.medical, .transplant {
+    width: 49%;
+    display: inline-block;
+    overflow: hidden;
+}
+.medical {
+   padding-right: 5%;
+   float: left;
+}
+.transplant {
+   padding-left: 5%;
+}
+.video p {
+  font-size: 0.9em;
+  margin-top: 0;
+}
