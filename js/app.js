@@ -14,7 +14,7 @@ $(document).ready(function() {
      'floor9',
      'floor10',
      'floor11',
-     'floor12'
+     'floor12', 'floor13'
      ],
     }
   );
