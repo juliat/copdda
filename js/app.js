@@ -13,7 +13,12 @@ $(document).ready(function() {
      'floor9',
      'floor10',
      'floor11',
-     'floor12', 'floor13'
+     'floor12', 
+     'floor13',
+     'floor14',
+     'floor15',
+     'floor15',
+     'floor16', 'floor17', 'floor18'
      ],
     }
   );
