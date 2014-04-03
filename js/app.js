@@ -9,7 +9,6 @@ $(document).ready(function() {
      'treatingCOPD',
      'whyDoIHaveAChoice',
      'floor6',
-     'floor7',
      'floor8',
      'floor9',
      'floor10',
