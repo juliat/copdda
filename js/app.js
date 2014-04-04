@@ -8,17 +8,7 @@ $(document).ready(function() {
      'whatIsCOPD',
      'treatingCOPD',
      'whyDoIHaveAChoice',
-     'floor6',
-     'floor8',
-     'floor9',
-     'floor10',
-     'floor11',
-     'floor12', 
-     'floor13',
-     'floor14',
-     'floor15',
-     'floor15',
-     'floor16', 'floor17', 'floor18'
+     'floor6'
      ],
     }
   );
