@@ -16,19 +16,19 @@ h1, h2 {
   padding: 3em 23%;
   background: white;
 }
-.floor-1 {
+.floor:nth-child(n) {
   background-color: #ecf8f8;
 }
-.floor-2 {
+.floor:nth-child(2n) {
   background-color: #f3f6e8;
 }
-.floor-3 {
+.floor:nth-child(3n) {
   background-color: #fffbe2;
 }
-.floor-4 {
+.floor:nth-child(4n) {
   background-color: #fff2e9;
 }
-.floor-5 {
+.floor:nth-child(5n) {
   background-color: #fff2ff;
 }
 .floor.wide {
