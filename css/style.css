@@ -48,8 +48,9 @@ h1, h2 {
   display: inline-block;
   background-color: white;
   color: white;
-  padding: 0.25em 0.5em;
+  padding: 0.1em 0.5em;
   border-radius: 3px;
+  font-size: 11px;
 }
 .progress li.selected {
   color: black;
