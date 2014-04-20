@@ -20,6 +20,7 @@ $(document).ready(function() {
   });
 
   $(".next").click(function() {
+    debugger;
     ascensorInstance.next();
   });
 

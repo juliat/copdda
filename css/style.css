@@ -2,16 +2,34 @@
   box-sizing: border-box;
 }
 body {
-  font-size: 1.3em;
-  line-height: 1.5;
+  font-size: 1.35em;
+  line-height: 1.6;
   background: #ccc;
+  font-family: "Gentium Book Basic", "Georgia", serif;
+  color: #24272C;
 }
 h1, h2 {
   line-height: 1.1;
+  font-family: "Open Sans", sans-serif;
 }
 .floor {
-  padding: 1em 23%;
+  padding: 3em 23%;
   background: white;
+}
+.floor-1 {
+  background-color: #ecf8f8;
+}
+.floor-2 {
+  background-color: #f3f6e8;
+}
+.floor-3 {
+  background-color: #fffbe2;
+}
+.floor-4 {
+  background-color: #fff2e9;
+}
+.floor-5 {
+  background-color: #fff2ff;
 }
 .floor.wide {
   padding: 1em 8%;
@@ -20,6 +38,11 @@ h1, h2 {
   height: 10%;
   position: fixed;
   bottom: 0;
+  width: 100%;
+}
+
+.prev, .progress, .next {
+  float: left;
 }
 .progress li {
   display: inline-block;
@@ -32,6 +55,19 @@ h1, h2 {
   color: black;
   background-color: black;
 }
+.prev, .next {
+    display: inline-block;
+    height: 100%;
+    width: 20%;
+    line-height: 1.1;
+    padding: 0.5em 1em;
+    background: #aaa;
+    font-size: 0.95em;
+}
+.progress {
+    width: 60%;
+}
+
 /* two column layout */
 .medical, .transplant {
     width: 49%;
