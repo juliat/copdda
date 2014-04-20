@@ -85,3 +85,8 @@ h1, h2 {
   font-size: 0.9em;
   margin-top: 0;
 }
+
+.video video{
+  width: 100%;
+  height: auto;
+}
