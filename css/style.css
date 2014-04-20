@@ -48,7 +48,8 @@ h1, h2 {
   display: inline-block;
   background-color: white;
   color: white;
-  padding: 0.1em 0.5em;
+  width: 1em;
+  overflow: hidden;
   border-radius: 3px;
   font-size: 11px;
 }
