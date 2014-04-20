@@ -9,6 +9,20 @@ $(document).ready(function() {
      'treatingCOPD',
      'whyDoIHaveAChoice',
      'floor6'
+     'tbenefit1'
+     'tbenefit2'
+     'tbenefit3'
+     'mbenefit1'
+     'mbenefit2'
+     'mbenefit3'
+     'transplantrisk'
+     'trisk1'
+     'trisk2'
+     'trisk3'
+     'MMrisk'
+     'mrisk1'
+     'mrisk2'
+     'mrisk3'
      ],
     }
   );
