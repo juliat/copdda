@@ -1,13 +1,14 @@
 $(document).ready(function() {
   var ascensor = $('#pagesWrapper').ascensor(
     {direction: 'x',
-     height: '90%',
+     height: '92%',
      ascensorFloorName: [
      'intro',
-     'whoIsThisFor',
      'whatIsCOPD',
+     'whoIsThisFor',
+     'whyAChoice',
+     'noSurvivalBenefit',
      'treatingCOPD',
-     'whyDoIHaveAChoice',
      'floor6',
      'tbenefit1',
      'tbenefit2',
