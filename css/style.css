@@ -1,17 +1,44 @@
 * {
   box-sizing: border-box;
 }
+svg {
+    height: 339px;
+
+    float: right;
+    width: 200px;
+}
+g:nth-child(-n+90){
+  fill: green;
+}
 body {
-  font-size: 1.3em;
-  line-height: 1.5;
+  font-size: 1.35em;
+  line-height: 1.6;
   background: #ccc;
+  font-family: "Gentium Book Basic", "Georgia", serif;
+  color: #24272C;
 }
 h1, h2 {
   line-height: 1.1;
+  font-family: "Open Sans", sans-serif;
 }
 .floor {
-  padding: 1em 23%;
+  padding: 3em 23%;
   background: white;
+}
+.floor:nth-child(n) {
+  background-color: #ecf8f8;
+}
+.floor:nth-child(2n) {
+  background-color: #f3f6e8;
+}
+.floor:nth-child(3n) {
+  background-color: #fffbe2;
+}
+.floor:nth-child(4n) {
+  background-color: #fff2e9;
+}
+.floor:nth-child(5n) {
+  background-color: #fff2ff;
 }
 .floor.wide {
   padding: 1em 8%;
@@ -20,18 +47,38 @@ h1, h2 {
   height: 10%;
   position: fixed;
   bottom: 0;
+  width: 100%;
 }
 .progress li {
   display: inline-block;
   background-color: white;
   color: white;
-  padding: 0.25em 0.5em;
+  width: 1em;
+  overflow: hidden;
   border-radius: 3px;
+  font-size: 11px;
 }
 .progress li.selected {
   color: black;
   background-color: black;
 }
+/*
+.prev, .next {
+    display: inline-block;
+    height: 100%;
+    width: 20%;
+    line-height: 1.1;
+    padding: 0.5em 1em;
+    background: #aaa;
+    font-size: 0.95em;
+}
+.prev, .progress, .next {
+  float: left;
+
+.progress {
+    width: 60%;
+}*/
+
 /* two column layout */
 .medical, .transplant {
     width: 49%;
@@ -48,4 +95,9 @@ h1, h2 {
 .video p {
   font-size: 0.9em;
   margin-top: 0;
+}
+
+.video video{
+  width: 100%;
+  height: auto;
 }

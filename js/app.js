@@ -8,21 +8,26 @@ $(document).ready(function() {
      'whatIsCOPD',
      'treatingCOPD',
      'whyDoIHaveAChoice',
-     'floor6'
-     'tbenefit1'
-     'tbenefit2'
-     'tbenefit3'
-     'mbenefit1'
-     'mbenefit2'
-     'mbenefit3'
-     'transplantrisk'
-     'trisk1'
-     'trisk2'
-     'trisk3'
-     'MMrisk'
-     'mrisk1'
-     'mrisk2'
-     'mrisk3'
+     'floor6',
+     'tbenefit1',
+     'tbenefit2',
+     'tbenefit3',
+     'mbenefit1',
+     'mbenefit2',
+     'mbenefit3',
+     'risksoverview',
+     'mmrisk',
+     'mrisk1',
+     'mrisk2',
+     'mrisk3',
+     'trisk1',
+     'trisk2',
+     'trisk3',
+     'valuequiz',
+     'value1',
+     'value2',
+     'value3',
+     'scale',
      ],
     }
   );
@@ -34,6 +39,7 @@ $(document).ready(function() {
   });
 
   $(".next").click(function() {
+    debugger;
     ascensorInstance.next();
   });
 
