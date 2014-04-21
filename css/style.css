@@ -10,17 +10,42 @@ svg {
 g:nth-child(-n+90){
   fill: green;
 }
+/*
 body {
   font-size: 1.35em;
   line-height: 1.6;
   background: #ccc;
   font-family: "Gentium Book Basic", "Georgia", serif;
+  color: ;
+} */
+
+/* type scale from
+http://type-scale.com/?size=22&scale=1.200&text=A%20Visual%20Type%20Scale&webfont=Gentium%20Book%20Basic&font-family=%27Gentium%20Book%20Basic%27%2C%20serif&font-weight=400&font-family-headers=%22Open%20Sans%22&font-weight-headers=700&background-color=&font-color=%2324272C
+*/
+body {
+  font-size: 1.375em;
+  font-family: 'Gentium Book Basic', serif;
+  font-weight: 400;
+  line-height: 1.45;
   color: #24272C;
 }
-h1, h2 {
-  line-height: 1.1;
-  font-family: "Open Sans", sans-serif;
+p {margin-bottom: 1.3em;}
+h1, h2, h3, h4 {
+  margin: 1.414em 0 0.5em;
+  font-family: "Open Sans";
+  font-weight: 700;
+  line-height: 1.2;
 }
+h1 {
+  margin-top: 0;
+  font-size: 2.074em;
+}
+/*h2 {font-size: 1.728em;}*/
+h2 {font-size: 1.44em;}
+h3 {font-size: 1.2em;}
+small, .font_small {font-size: 0.833em;}
+
+
 .floor {
   padding: 3em 23%;
   background: white;
