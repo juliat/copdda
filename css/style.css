@@ -1,6 +1,15 @@
 * {
   box-sizing: border-box;
 }
+svg {
+    height: 339px;
+
+    float: right;
+    width: 200px;
+}
+g:nth-child(-n+90){
+  fill: green;
+}
 body {
   font-size: 1.35em;
   line-height: 1.6;
@@ -40,10 +49,6 @@ h1, h2 {
   bottom: 0;
   width: 100%;
 }
-
-.prev, .progress, .next {
-  float: left;
-}
 .progress li {
   display: inline-block;
   background-color: white;
@@ -57,6 +62,7 @@ h1, h2 {
   color: black;
   background-color: black;
 }
+/*
 .prev, .next {
     display: inline-block;
     height: 100%;
@@ -66,9 +72,12 @@ h1, h2 {
     background: #aaa;
     font-size: 0.95em;
 }
+.prev, .progress, .next {
+  float: left;
+
 .progress {
     width: 60%;
-}
+}*/
 
 /* two column layout */
 .medical, .transplant {
