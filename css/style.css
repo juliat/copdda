@@ -58,7 +58,9 @@ a:hover {
 }
 .next-page:before {
   content: "→";
-  text-decoration: none;
+}
+.backToMain:before {
+  content: "←";
 }
 .floor {
   padding: 3em 23%;

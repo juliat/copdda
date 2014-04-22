@@ -2,6 +2,7 @@ $(document).ready(function() {
   var ascensor = $('#pagesWrapper').ascensor(
     {direction: 'x',
      height: '92%',
+     jump: true,
      ascensorFloorName: [
      'intro',
      'whoIsThisFor',
@@ -9,27 +10,8 @@ $(document).ready(function() {
      'howTreatmentsWork',
      'whyAChoice',
      'noSurvivalBenefit',
-     'treatingCOPD',
      'benefitsOverview',
-     'tbenefit1',
-     'tbenefit2',
-     'tbenefit3',
-     'mbenefit1',
-     'mbenefit2',
-     'mbenefit3',
-     'risksoverview',
-     'mmrisk',
-     'mrisk1',
-     'mrisk2',
-     'mrisk3',
-     'trisk1',
-     'trisk2',
-     'trisk3',
-     'valuequiz',
-     'value1',
-     'value2',
-     'value3',
-     'scale',
+     'goingOffOxygen',
      ],
     }
   );
@@ -41,7 +23,6 @@ $(document).ready(function() {
   });
 
   $(".next").click(function() {
-    debugger;
     ascensorInstance.next();
   });
 
