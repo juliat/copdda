@@ -10,7 +10,7 @@ $(document).ready(function() {
      'whyAChoice',
      'noSurvivalBenefit',
      'treatingCOPD',
-     'floor6',
+     'benefitsOverview',
      'tbenefit1',
      'tbenefit2',
      'tbenefit3',
