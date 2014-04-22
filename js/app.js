@@ -5,6 +5,7 @@ $(document).ready(function() {
      ascensorFloorName: [
      'intro',
      'whatIsCOPD',
+     'howTreatmentsWork',
      'whoIsThisFor',
      'whyAChoice',
      'noSurvivalBenefit',
