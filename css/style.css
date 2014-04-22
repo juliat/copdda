@@ -7,17 +7,12 @@ svg {
     float: right;
     width: 200px;
 }
-g:nth-child(-n+90){
+#off_o2_viz g:nth-child(-n+90){
   fill: green;
 }
-/*
-body {
-  font-size: 1.35em;
-  line-height: 1.6;
-  background: #ccc;
-  font-family: "Gentium Book Basic", "Georgia", serif;
-  color: ;
-} */
+#something_else g:nth-child(-n+50){
+  fill: green;
+}
 
 /* type scale from
 http://type-scale.com/?size=22&scale=1.200&text=A%20Visual%20Type%20Scale&webfont=Gentium%20Book%20Basic&font-family=%27Gentium%20Book%20Basic%27%2C%20serif&font-weight=400&font-family-headers=%22Open%20Sans%22&font-weight-headers=700&background-color=&font-color=%2324272C
