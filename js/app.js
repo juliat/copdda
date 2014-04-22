@@ -4,9 +4,9 @@ $(document).ready(function() {
      height: '92%',
      ascensorFloorName: [
      'intro',
+     'whoIsThisFor',
      'whatIsCOPD',
      'howTreatmentsWork',
-     'whoIsThisFor',
      'whyAChoice',
      'noSurvivalBenefit',
      'treatingCOPD',
