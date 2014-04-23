@@ -1,17 +1,30 @@
 * {
   box-sizing: border-box;
 }
-svg {
-    height: 339px;
-
-    float: right;
+.chances_graph p {
+  display: inline;
+}
+.chances_graph {
+  float:left;
+}
+.peopleviz svg {
+    height: 245px;
+    float: left;
     width: 200px;
+    margin: 0 -1.25em 1.35em -2.15em;
+    padding: 0;
 }
 #off_o2_viz g:nth-child(-n+90){
   fill: green;
 }
-#something_else g:nth-child(-n+50){
-  fill: green;
+#rejection_viz g:nth-child(-n+30){
+  fill: red;
+}
+#yr1_kidney_damage_viz g:nth-child(-n+23){
+  fill: red;
+}
+#yr5_kidney_damage_viz g:nth-child(-n+55){
+  fill: red;
 }
 
 /* type scale from
@@ -56,8 +69,17 @@ a {
 a:hover {
   color: #15c7d4;
 }
+
+.next-page {
+  clear:both;
+  display: block;
+}
 .next-page:before {
   content: "→";
+}
+.backToMain {
+  display:block;
+  clear:both;
 }
 .backToMain:before {
   content: "←";

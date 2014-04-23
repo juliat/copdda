@@ -12,6 +12,12 @@ $(document).ready(function() {
      'noSurvivalBenefit',
      'benefitsOverview',
      'goingOffOxygen',
+     'risksOverview',
+     'ventilator',
+     'repeatHospitalVisits',
+     'kidneyDamage',
+     'rejection',
+     'frequentMedicineUse',
      ],
     }
   );
