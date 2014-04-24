@@ -73,7 +73,9 @@ a {
 a:hover {
   color: #15c7d4;
 }
-
+.col-2  h2:first-child {
+  margin-top: 0.65em;
+}
 .next-page {
   clear:both;
   display: block;
@@ -89,29 +91,8 @@ a:hover {
   content: "←";
 }
 .floor {
-  padding: 3em 23%;
+  padding: 3em 8%;
   background-color: #FCF9F0;
-}
-/*
-.floor:nth-child(n) {
-  background-color: #f3f6e8;
-}
-.floor:nth-child(2n) {
-  background-color: #ecf8f8;
-}
-.floor:nth-child(3n) {
-  background-color: #fffbe2;
-}
-.floor:nth-child(4n) {
-  background-color: #fff2e9;
-}
-.floor:nth-child(5n) {
-  background-color: #fff2ff;
-}
-*/
-.floor.wide {
-  padding-left: 8%;
-  padding-right: 8%;
 }
 .footer {
   height: 8%;
@@ -156,17 +137,17 @@ a:hover {
   padding-left: 1em;
 }
 /* two column layout */
-.medical, .transplant {
+.col-1, .col-2 {
     width: 49%;
     display: inline-block;
     overflow: hidden;
 }
-.medical {
+.col-1 {
    padding-right: 5%;
    float: left;
    overflow: visible;
 }
-.transplant {
+.col-2 {
    padding-left: 5%;
 }
 .video p {

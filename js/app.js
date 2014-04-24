@@ -7,6 +7,8 @@ $(document).ready(function() {
      'intro',
      'whoIsThisFor',
      'whatIsCOPD',
+     'whatIsChronicBronchitis',
+     'whatIsEmphysema',
      'howTreatmentsWork',
      'whyAChoice',
      'noSurvivalBenefit',
