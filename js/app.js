@@ -56,8 +56,11 @@ $(document).ready(function() {
     /*
     for whatever reason, doing window.focus and window.scrollBy(0, 100)
     won't activate vertical scrolling here :/
+    window.scrollBy(0, 100);
     */
 
   });
+
+  $("body").focus();
 
 });
