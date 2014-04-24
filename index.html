@@ -1,90 +1,14 @@
 <!doctype html>
   <head>
-    <title>COPD Decision Aid</title>
-    <link href='http://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,400italic,700,700italic|Open+Sans:400,700,800,600' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <!-- jquery, using older version to support IE -->
+     <!-- jquery, using older version to support IE -->
     <script type="text/javascript" src="js/jquery-1.11.0.js"></script>
-    <!-- paging plugin -->
-    <script type="text/javascript" src="js/jquery.ascensor.min.js"></script>
-    <!-- keyboard event handling library -->
-    <script type="text/javascript" src="js/mousetrap.min.js"></script>
-    <!-- custom code linking plugins to our content -->
-    <script type="text/javascript" src="js/app.js"></script>
+    <script>$('head').load("head.html")</script>
   </head>
   <body>
     <div id="pagesWrapper">
       <div class="floor floor-1" id="floor-1">
         <script>$( "#floor-1" ).load( "decisionAidIntro.html" );</script>
       </div>
-      <div class="floor floor-2" id="floor-2">
-        <script>$( "#floor-2" ).load( "whoIsThisFor.html" );</script>
-      </div>
-      <div class="floor floor-3" id="floor-3">
-        <script>$( "#floor-3" ).load( "whatIsCOPD.html" );</script>
-
-      </div>
-      <div class="floor floor-4" id="floor-4">
-        <script>$( "#floor-4" ).load( "howTreatmentsWork.html" );</script>
-
-      </div>
-      <div class="floor floor-5" id="floor-5">
-         <script>$( "#floor-5" ).load( "whyAChoice.html" );</script>
-      </div>
-      <div class="floor floor-6" id="floor-6">
-         <script>$( "#floor-6" ).load( "noSurvivalBenefit.html" );</script>
-      </div>
-      <div class="floor floor-7 wide" id="floor-7">
-        <script>$("#floor-7" ).load( "benefitsOverview.html" );</script>
-      </div>
-      <div class="floor floor-8" id="floor-8">
-       <script>$( "#floor-8" ).load( "goingOffOxygen.html" );</script>
-      </div>
-      <div class="floor floor-9 wide" id="floor-9">
-        <script>$( "#floor-9" ).load( "risksOverview.html" );</script>
-      </div>
-
-      <div class="floor floor-10" id="floor-10">
-        <script>$( "#floor-10" ).load( "ventilator.html" );</script>
-      </div>
-      <div class="floor floor-11" id="floor-11">
-        <script>$( "#floor-11" ).load( "repeatHospitalVisits.html" );</script>
-      </div>
-      <div class="floor floor-12" id="floor-12">
-        <script>$( "#floor-12" ).load( "kidneyDamage.html" );</script>
-      </div>
-      <div class="floor floor-13" id="floor-13">
-         <script>$( "#floor-13" ).load( "rejection.html" );</script>
-      </div>
-      <div class="floor floor-14" id="floor-14">
-        <script>$( "#floor-14" ).load( "frequentMedicineUse.html" );</script>
-      </div>
-      <!--
-      <div class="floor floor-15" id="floor-15">
-      </div>
-      <div class="floor floor-16" id="floor-16">
-      </div>
-      <div class="floor floor-17" id="floor-17">
-      </div>
-      <div class="floor floor-18" id="floor-18">
-      </div>
-      <div class="floor floor-19" id="floor-19">
-      </div>
-      <div class="floor floor-20" id="floor-20">
-      </div>
-      <div class="floor floor-21" id="floor-21">
-      </div>
-      <div class="floor floor-22" id="floor-22">
-      </div>
-      <div class="floor floor-23" id="floor-23">
-      </div>
-      <div class="floor floor-24" id="floor-24">
-      </div>
-      <div class="floor floor-25" id="floor-25">
-      </div>
-      <div class="floor floor-26" id="floor-26">
-      </div>
-    -->
     </div><!-- end pagesWrapper -->
     <div class="footer">
       <!--<a href="" class="prev">Click here or press the left arrow key to go back.</a>-->
