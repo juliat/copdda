@@ -46,6 +46,18 @@ $(document).ready(function() {
     $(".progress li").removeClass("selected");
     console.log(floor.to);
     $(".progress li:eq("+floor.to+")").addClass("selected");
+
+    /* tried simulating click on floor transition with no success */
+    /* $("#floor-"+floor.to).click(); */
+  });
+
+  Mousetrap.bind('down', function() {
+    console.log("down");
+    /*
+    for whatever reason, doing window.focus and window.scrollBy(0, 100)
+    won't activate vertical scrolling here :/
+    */
+
   });
 
 });
