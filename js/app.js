@@ -1,4 +1,23 @@
 $(document).ready(function() {
+  /* handle collapsing of paragraphs */
+  function setUpCollapsedParagraphs() {
+    var collapsed_links = $('.preview');
+    collapsed_links.each(function(){
+      $(this).next().hide();
+    });
+    collapsed_links.bind('click', function(event){
+      event.preventDefault();
+      $(this).hide().prev().hide();
+      $(this).next().show();
+    });
+  };
+
+  function loadVideoInstructions() {
+    $(".vidInstructions").each(function(){
+      $(this).load("youtubePlay.html");
+    });
+  };
+
   var ascensor = $('#pagesWrapper').ascensor(
     {direction: 'x',
      height: '92%',
@@ -7,12 +26,20 @@ $(document).ready(function() {
      'intro',
      'whoIsThisFor',
      'whatIsCOPD',
+     'whatDoesCOPDStandFor',
+     'whatIsChronicBronchitis',
+     'whatIsEmphysema',
      'howTreatmentsWork',
+     'COPDMedicines',
+     'exerciseForCOPD',
+     'surgeriesForCOPD',
      'whyAChoice',
      'noSurvivalBenefit',
-     'benefitsOverview',
+     'whyMedical',
+     'whyTransplant',
      'goingOffOxygen',
-     'risksOverview',
+     'whyNotMedical',
+     'whyNotTransplant',
      'ventilator',
      'repeatHospitalVisits',
      'kidneyDamage',
@@ -38,7 +65,6 @@ $(document).ready(function() {
     ascensorInstance.scrollToFloor($(this).index());
   });
 
-
   /* docs on the :eq function of jquery https://api.jquery.com/eq/ */
   $(".progress li:eq("+ ascensor.data("current-floor") +")").addClass("selected");
 
@@ -46,7 +72,8 @@ $(document).ready(function() {
     $(".progress li").removeClass("selected");
     console.log(floor.to);
     $(".progress li:eq("+floor.to+")").addClass("selected");
-
+    setUpCollapsedParagraphs();
+    loadVideoInstructions();
     /* tried simulating click on floor transition with no success */
     /* $("#floor-"+floor.to).click(); */
   });
@@ -58,9 +85,6 @@ $(document).ready(function() {
     won't activate vertical scrolling here :/
     window.scrollBy(0, 100);
     */
-
   });
-
-  $("body").focus();
 
 });
