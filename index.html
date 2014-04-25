@@ -6,16 +6,14 @@
     <!-- jquery, using older version to support IE -->
     <script type="text/javascript" src="js/jquery-1.11.0.js"></script>
     <!-- paging plugin -->
-    <script type="text/javascript" src="js/turn.min.js"></script>
+    <script type="text/javascript" src="js/ascensor.min.js"></script>
     <!-- keyboard event handling library -->
     <script type="text/javascript" src="js/mousetrap.min.js"></script>
     <!-- custom code linking plugins to our content -->
     <script type="text/javascript" src="js/app.js"></script>
   </head>
   <body>
-    <div id="book">
-      <div id="pagesWrapper">
-        <script>
+    <script>
         var filesArray = [
         "decisionAidIntro.html",
         "whoIsThisFor.html",
@@ -40,15 +38,48 @@
         "rejection.html",
         "frequentMedicineUse.html"
         ]
-        </script>
+    </script>
+    <div id="book">
+      <div id="pagesWrapper">
         <div class="floor floor-1" id="floor-1">
-          <script>$( "#floor-1" ).load(filesArray[0]);</script>
+          <p>This website is a tool for education and reflection for patients with severe Chronic Obstructive Pulmonary Disease (COPD) who are considering their treatment options.</p>
+          <h2>How do I use this website?</h2>
+          <img class="arrow-keys" src="img/arrowkeys.jpg"/>
+          <p>To go between pages on this website, use the arrow keys on your keyboard. The right arrow key will move you forward through the pages of the website, and the left arrow key will move you back (to the previous page you viewed).
+          <!--On any page, you can press the "H" key to hear the text on the page read aloud. On some pages, there will be more instructions on how to use the keys on the keyboard to use the website.
+          -->
+          </p>
+          <a class="next next-page" href="#whoIsThisFor">find out who is this website for.</a>
         </div>
         <div class="floor floor-2" id="floor-2">
-          <script>$( "#floor-2" ).load(filesArray[1]);</script>
+          <h1>Who is this website meant for?</h1>
+          <p>This website and the text, pictures, and videos on it are meant to inform patients with severe <a href="whatIsCOPD">Chronic Obstructive Pulmonary Disease (COPD)</a> about their treatment options. It focuses especially on the choice between treating COPD using medicines and getting a lung transplant.</p>
+          <p class="collapsed"><a href="#" class="preview">Click here to find out what we mean by “severe” COPD.</a><span class="hidden"> Patients with severe COPD have very damaged lungs and experience very bad symptoms. When patients with severe COPD go to the hospital, it’s usually because something happened that was life threatening. Similarly, many patients with severe COPD can’t leave the house, or even their room, because of their disease.</span></p>
+          <h2>Who is this website NOT meant for?</h2>
+          <p>This website isn’t for you if:</p>
+          <ul>
+            <li>You are considering lung transplant for treatment of a disease other than COPD (e.g., Cystic Fibrosis)</li>
+          </ul>
+          <a class="next-page" href="#whatIsCOPD">find out what COPD is.</a>
         </div>
         <div class="floor floor-3" id="floor-3">
-          <script>$( "#floor-3" ).load(filesArray[2]);</script>
+          <p class="breadcrumb">COPD and Treatments for It</p>
+          <h1>What is COPD?</h1>
+          <!-- placeholder vid -->
+          <iframe width="640" height="360" src="//www.youtube.com/embed/aktIMBQSXMo?feature=player_embedded" frameborder="0" allowfullscreen></iframe>
+          <div id="vidInstructions" class="vidInstructions">
+            <script>$("#vidInstructions").load("youtubePlay.html");</script>
+          </div>
+
+          <a href="#whatDoesCOPDStandFor" class="next-page">learn what “COPD” stands for.</a>
+
+          <!--
+          <h3>Sources</h3>
+          <ul>
+            <li><a href="http://lungcancer.about.com/od/glossary/g/alveoli.htm">What are Alveoli?</a></li>
+          </ul>
+          -->
+
         </div>
         <div class="floor floor-4" id="floor-4">
           <script>$( "#floor-4" ).load(filesArray[3]);</script>

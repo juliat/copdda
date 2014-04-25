@@ -18,14 +18,6 @@ $(document).ready(function() {
     });
   };
 
-
-  $("#pagesWrapper").turn({
-    width: 1000,
-    height: 700,
-    autoCenter: true
-  });
-
-
 /*
   var ascensor = $('#pagesWrapper').ascensor(
     {direction: 'x',
