@@ -42,10 +42,7 @@ body {
   color: #000;
   text-rendering: optimizeLegibility;
 }
-p {margin-bottom: 1.3em;}
-li {
-  margin-bottom: 0.75em;
-}
+p, li {margin-bottom: 1.3em;}
 h1, h2, h3, h4 {
   margin: 1.414em 0 0.5em;
   font-family: "Open Sans";
@@ -82,7 +79,7 @@ a:hover {
   display: block;
 }
 .next-page:before {
-  content: "→ Click here to ";
+  content: "→";
 }
 .backToMain {
   display:block;
@@ -172,7 +169,6 @@ a:hover {
 .transplant {
    padding-left: 5%;
 }
-
 .video p {
   font-size: 0.9em;
   margin-top: 0;
@@ -180,20 +176,4 @@ a:hover {
 .video video{
   width: 100%;
   height: auto;
-}
-.vidInstructions svg {
-    height: 1.6em;
-    margin: 0 -1.5em;
-    padding-top: 0.1em;
-    display: inline-block;
-    margin-bottom: -0.4em;
-}
-.vidInstructions p {
-  margin-top: 0;
-  font-size: 0.9em;
-}
-img.arrow-keys {
-  width: 50%;
-  float: left;
-  margin-right: 1em;
 }
