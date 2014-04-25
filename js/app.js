@@ -18,6 +18,15 @@ $(document).ready(function() {
     });
   };
 
+
+  $("#pagesWrapper").turn({
+    width: 1000,
+    height: 700,
+    autoCenter: true
+  });
+
+
+/*
   var ascensor = $('#pagesWrapper').ascensor(
     {direction: 'x',
      height: '92%',
@@ -59,24 +68,28 @@ $(document).ready(function() {
     ascensorInstance.next();
   });
 
+  */
   // to update progress bar
   /* make the progress bar link to different content */
+  /*
   $(".progress li").click(function(event, index) {
     ascensorInstance.scrollToFloor($(this).index());
   });
-
+  */
   /* docs on the :eq function of jquery https://api.jquery.com/eq/ */
-  $(".progress li:eq("+ ascensor.data("current-floor") +")").addClass("selected");
-
+  // $(".progress li:eq("+ ascensor.data("current-floor") +")").addClass("selected");
+/*
   ascensor.on("scrollStart", function(event, floor){
     $(".progress li").removeClass("selected");
     console.log(floor.to);
     $(".progress li:eq("+floor.to+")").addClass("selected");
     setUpCollapsedParagraphs();
     loadVideoInstructions();
+*/
+
     /* tried simulating click on floor transition with no success */
     /* $("#floor-"+floor.to).click(); */
-  });
+//  });
 
   Mousetrap.bind('down', function() {
     console.log("down");
@@ -86,5 +99,6 @@ $(document).ready(function() {
     window.scrollBy(0, 100);
     */
   });
+
 
 });
