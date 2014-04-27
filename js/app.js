@@ -1,4 +1,24 @@
 $(document).ready(function() {
+
+  /* handle collapsing of paragraphs */
+  function setUpCollapsedParagraphs() {
+    var collapsed_links = $('.preview');
+    collapsed_links.each(function(){
+      $(this).next().hide();
+    });
+    collapsed_links.bind('click', function(event){
+      event.preventDefault();
+      $(this).hide().prev().hide();
+      $(this).next().show();
+    });
+  };
+
+  function loadVideoInstructions() {
+    $(".vidInstructions").each(function(){
+      $(this).load("youtubePlay.html");
+    });
+  };
+
   var ascensor = $('#pagesWrapper').ascensor(
     {direction: 'x',
      height: '92%',
@@ -47,14 +67,18 @@ $(document).ready(function() {
   });
 
   /* docs on the :eq function of jquery https://api.jquery.com/eq/ */
-  // $(".progress li:eq("+ ascensor.data("current-floor") +")").addClass("selected");
+  $(".progress li:eq("+ ascensor.data("current-floor") +")").addClass("selected");
+
   ascensor.on("scrollStart", function(event, floor){
     $(".progress li").removeClass("selected");
-    console.log(floor.to);
+    // console.log(floor.to);
     $(".progress li:eq("+floor.to+")").addClass("selected");
 
     setUpCollapsedParagraphs();
     loadVideoInstructions();
+
+    /* tried simulating click on floor transition with no success */
+    /* $("#floor-"+floor.to).click(); */
   });
 
   Mousetrap.bind('down', function() {
