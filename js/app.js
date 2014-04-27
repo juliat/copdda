@@ -27,12 +27,20 @@ $(document).ready(function() {
      'intro',
      'whoIsThisFor',
      'whatIsCOPD',
+     'whatDoesCOPDStandFor',
+     'whatIsChronicBronchitis',
+     'whatIsEmphysema',
      'howTreatmentsWork',
+     'COPDMedicines',
+     'exerciseForCOPD',
+     'surgeriesForCOPD',
      'whyAChoice',
      'noSurvivalBenefit',
-     'benefitsOverview',
+     'whyMedical',
+     'whyTransplant',
      'goingOffOxygen',
-     'risksOverview',
+     'whyNotMedical',
+     'whyNotTransplant',
      'ventilator',
      'repeatHospitalVisits',
      'kidneyDamage',
@@ -63,11 +71,12 @@ $(document).ready(function() {
 
   ascensor.on("scrollStart", function(event, floor){
     $(".progress li").removeClass("selected");
-    console.log(floor.to);
+    // console.log(floor.to);
     $(".progress li:eq("+floor.to+")").addClass("selected");
 
     setUpCollapsedParagraphs();
     loadVideoInstructions();
+
     /* tried simulating click on floor transition with no success */
     /* $("#floor-"+floor.to).click(); */
   });
