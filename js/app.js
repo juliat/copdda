@@ -59,9 +59,4 @@ $(document).ready(function() {
 
   });
 
-<<<<<<< HEAD
-=======
-  $("body").focus();
->>>>>>> parent of 626a64b... added instructions for videos and broke up more of the content
-
 });
