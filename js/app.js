@@ -1,24 +1,4 @@
 $(document).ready(function() {
-
-  /* handle collapsing of paragraphs */
-  function setUpCollapsedParagraphs() {
-    var collapsed_links = $('.preview');
-    collapsed_links.each(function(){
-      $(this).next().hide();
-    });
-    collapsed_links.bind('click', function(event){
-      event.preventDefault();
-      $(this).hide().prev().hide();
-      $(this).next().show();
-    });
-  };
-
-  function loadVideoInstructions() {
-    $(".vidInstructions").each(function(){
-      $(this).load("youtubePlay.html");
-    });
-  };
-
   var ascensor = $('#pagesWrapper').ascensor(
     {direction: 'x',
      height: '92%',
@@ -76,9 +56,9 @@ $(document).ready(function() {
 
     setUpCollapsedParagraphs();
     loadVideoInstructions();
-
     /* tried simulating click on floor transition with no success */
     /* $("#floor-"+floor.to).click(); */
+
   });
 
   Mousetrap.bind('down', function() {
@@ -88,6 +68,7 @@ $(document).ready(function() {
     won't activate vertical scrolling here :/
     window.scrollBy(0, 100);
     */
+
   });
 
 });
