@@ -6,7 +6,7 @@
     <!-- jquery, using older version to support IE -->
     <script type="text/javascript" src="js/jquery-1.11.0.js"></script>
     <!-- paging plugin -->
-    <script type="text/javascript" src="js/jquery.ascensor.min.js"></script>
+    <script type="text/javascript" src="js/ascensor.min.js"></script>
     <!-- keyboard event handling library -->
     <script type="text/javascript" src="js/mousetrap.min.js"></script>
     <!-- custom code linking plugins to our content -->
@@ -40,6 +40,7 @@
         "frequentMedicineUse.html"
         ]
     </script>
+    <div id="pagesWrapper">
       <div class="floor floor-1" id="floor-1">
         <script>$( "#floor-1" ).load(filesArray[0]);</script>
       </div>
@@ -115,8 +116,7 @@
       <div class="floor floor-26" id="floor-26">
       </div>
     -->
-    </div><!-- end pagesWrapper -->
-
+    </div>
     <div class="footer">
       <ul class="progress">
         <li class="selected">1</li>
