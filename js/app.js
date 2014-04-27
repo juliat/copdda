@@ -1,5 +1,4 @@
 $(document).ready(function() {
-
   /* handle collapsing of paragraphs */
   function setUpCollapsedParagraphs() {
     var collapsed_links = $('.preview');
@@ -65,7 +64,6 @@ $(document).ready(function() {
   $(".progress li").click(function(event, index) {
     ascensorInstance.scrollToFloor($(this).index());
   });
-
   /* docs on the :eq function of jquery https://api.jquery.com/eq/ */
   $(".progress li:eq("+ ascensor.data("current-floor") +")").addClass("selected");
 
@@ -73,10 +71,8 @@ $(document).ready(function() {
     $(".progress li").removeClass("selected");
     // console.log(floor.to);
     $(".progress li:eq("+floor.to+")").addClass("selected");
-
     setUpCollapsedParagraphs();
     loadVideoInstructions();
-
     /* tried simulating click on floor transition with no success */
     /* $("#floor-"+floor.to).click(); */
   });
@@ -89,5 +85,6 @@ $(document).ready(function() {
     window.scrollBy(0, 100);
     */
   });
+
 
 });
