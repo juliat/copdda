@@ -13,7 +13,6 @@
     <script type="text/javascript" src="js/app.js"></script>
   </head>
   <body>
-    <div id="pagesWrapper">
     <script>
         var filesArray = [
         "decisionAidIntro.html",
@@ -40,85 +39,118 @@
         "frequentMedicineUse.html"
         ]
     </script>
-      <div class="floor floor-1" id="floor-1">
-        <script>$( "#floor-1" ).load(filesArray[0]);</script>
-      </div>
-      <div class="floor floor-2" id="floor-2">
-        <script>$( "#floor-2" ).load(filesArray[1]);</script>
-      </div>
-      <div class="floor floor-3" id="floor-3">
-        <script>$( "#floor-3" ).load(filesArray[2]);</script>
-      </div>
-      <div class="floor floor-4" id="floor-4">
-        <script>$( "#floor-4" ).load(filesArray[3]);</script>
-      </div>
-      <div class="floor floor-5" id="floor-5">
-         <script>$( "#floor-5" ).load(filesArray[4]);</script>
-      </div>
-      <div class="floor floor-6" id="floor-6">
-         <script>$( "#floor-6" ).load(filesArray[5]);</script>
-      </div>
-      <div class="floor floor-7" id="floor-7">
-        <script>$("#floor-7" ).load(filesArray[6]);</script>
-      </div>
-      <div class="floor floor-8" id="floor-8">
-       <script>$( "#floor-8" ).load(filesArray[7]);</script>
-      </div>
-      <div class="floor floor-9" id="floor-9">
-        <script>$( "#floor-9" ).load(filesArray[8]);</script>
-      </div>
-      <div class="floor floor-10" id="floor-10">
-        <script>$( "#floor-10" ).load(filesArray[9]);</script>
-      </div>
-      <div class="floor floor-11" id="floor-11">
-        <script>$( "#floor-11" ).load(filesArray[10]);</script>
-      </div>
-      <div class="floor floor-12" id="floor-12">
-        <script>$( "#floor-12" ).load(filesArray[11]);</script>
-      </div>
-      <div class="floor floor-13" id="floor-13">
-         <script>$( "#floor-13" ).load(filesArray[12]);</script>
-      </div>
-      <div class="floor floor-14" id="floor-14">
-        <script>$( "#floor-14" ).load(filesArray[13]);</script>
-      </div>
-      <div class="floor floor-15" id="floor-15">
-         <script>$( "#floor-15" ).load(filesArray[14]);</script>
-      </div>
-      <div class="floor floor-16" id="floor-16">
-        <script>$( "#floor-16" ).load(filesArray[15]);</script>
-      </div>
-      <div class="floor floor-17" id="floor-17">
-        <script>$( "#floor-17" ).load(filesArray[16]);</script>
-      </div>
-      <div class="floor floor-18" id="floor-18">
-        <script>$( "#floor-18" ).load(filesArray[17]);</script>
-      </div>
-      <div class="floor floor-19" id="floor-19">
-        <script>$( "#floor-19" ).load(filesArray[18]);</script>
-      </div>
-      <div class="floor floor-20" id="floor-20">
-        <script>$( "#floor-20" ).load(filesArray[19]);</script>
-      </div>
-      <div class="floor floor-21" id="floor-21">
-        <script>$( "#floor-21" ).load(filesArray[20]);</script>
-      </div>
-      <!--
-      <div class="floor floor-22" id="floor-22">
-      </div>
-      <div class="floor floor-23" id="floor-23">
-      </div>
-      <div class="floor floor-24" id="floor-24">
-      </div>
-      <div class="floor floor-25" id="floor-25">
-      </div>
-      <div class="floor floor-26" id="floor-26">
-      </div>
-    -->
-    </div><!-- end pagesWrapper -->
+    <div id="book">
+      <div id="pagesWrapper">
+        <div class="floor floor-1" id="floor-1">
+          <p>This website is a tool for education and reflection for patients with severe Chronic Obstructive Pulmonary Disease (COPD) who are considering their treatment options.</p>
+          <h2>How do I use this website?</h2>
+          <img class="arrow-keys" src="img/arrowkeys.jpg"/>
+          <p>To go between pages on this website, use the arrow keys on your keyboard. The right arrow key will move you forward through the pages of the website, and the left arrow key will move you back (to the previous page you viewed).
+          <!--On any page, you can press the "H" key to hear the text on the page read aloud. On some pages, there will be more instructions on how to use the keys on the keyboard to use the website.
+          -->
+          </p>
+          <a class="next next-page" href="#whoIsThisFor">find out who is this website for.</a>
+        </div>
+        <div class="floor floor-2" id="floor-2">
+          <h1>Who is this website meant for?</h1>
+          <p>This website and the text, pictures, and videos on it are meant to inform patients with severe <a href="whatIsCOPD">Chronic Obstructive Pulmonary Disease (COPD)</a> about their treatment options. It focuses especially on the choice between treating COPD using medicines and getting a lung transplant.</p>
+          <p class="collapsed"><a href="#" class="preview">Click here to find out what we mean by “severe” COPD.</a><span class="hidden"> Patients with severe COPD have very damaged lungs and experience very bad symptoms. When patients with severe COPD go to the hospital, it’s usually because something happened that was life threatening. Similarly, many patients with severe COPD can’t leave the house, or even their room, because of their disease.</span></p>
+          <h2>Who is this website NOT meant for?</h2>
+          <p>This website isn’t for you if:</p>
+          <ul>
+            <li>You are considering lung transplant for treatment of a disease other than COPD (e.g., Cystic Fibrosis)</li>
+          </ul>
+          <a class="next-page" href="#whatIsCOPD">find out what COPD is.</a>
+        </div>
+        <div class="floor floor-3" id="floor-3">
+          <p class="breadcrumb">COPD and Treatments for It</p>
+          <h1>What is COPD?</h1>
+          <!-- placeholder vid -->
+          <iframe width="640" height="360" src="//www.youtube.com/embed/aktIMBQSXMo?feature=player_embedded" frameborder="0" allowfullscreen></iframe>
+          <div id="vidInstructions" class="vidInstructions">
+            <script>$("#vidInstructions").load("youtubePlay.html");</script>
+          </div>
+
+          <a href="#whatDoesCOPDStandFor" class="next-page">learn what “COPD” stands for.</a>
+
+          <!--
+          <h3>Sources</h3>
+          <ul>
+            <li><a href="http://lungcancer.about.com/od/glossary/g/alveoli.htm">What are Alveoli?</a></li>
+          </ul>
+          -->
+
+        </div>
+        <div class="floor floor-4" id="floor-4">
+          <script>$( "#floor-4" ).load(filesArray[3]);</script>
+        </div>
+        <div class="floor floor-5" id="floor-5">
+           <script>$( "#floor-5" ).load(filesArray[4]);</script>
+        </div>
+        <div class="floor floor-6" id="floor-6">
+           <script>$( "#floor-6" ).load(filesArray[5]);</script>
+        </div>
+        <div class="floor floor-7" id="floor-7">
+          <script>$("#floor-7" ).load(filesArray[6]);</script>
+        </div>
+        <div class="floor floor-8" id="floor-8">
+         <script>$( "#floor-8" ).load(filesArray[7]);</script>
+        </div>
+        <div class="floor floor-9" id="floor-9">
+          <script>$( "#floor-9" ).load(filesArray[8]);</script>
+        </div>
+        <div class="floor floor-10" id="floor-10">
+          <script>$( "#floor-10" ).load(filesArray[9]);</script>
+        </div>
+        <div class="floor floor-11" id="floor-11">
+          <script>$( "#floor-11" ).load(filesArray[10]);</script>
+        </div>
+        <div class="floor floor-12" id="floor-12">
+          <script>$( "#floor-12" ).load(filesArray[11]);</script>
+        </div>
+        <div class="floor floor-13" id="floor-13">
+           <script>$( "#floor-13" ).load(filesArray[12]);</script>
+        </div>
+        <div class="floor floor-14" id="floor-14">
+          <script>$( "#floor-14" ).load(filesArray[13]);</script>
+        </div>
+        <div class="floor floor-15" id="floor-15">
+           <script>$( "#floor-15" ).load(filesArray[14]);</script>
+        </div>
+        <div class="floor floor-16" id="floor-16">
+          <script>$( "#floor-16" ).load(filesArray[15]);</script>
+        </div>
+        <div class="floor floor-17" id="floor-17">
+          <script>$( "#floor-17" ).load(filesArray[16]);</script>
+        </div>
+        <div class="floor floor-18" id="floor-18">
+          <script>$( "#floor-18" ).load(filesArray[17]);</script>
+        </div>
+        <div class="floor floor-19" id="floor-19">
+          <script>$( "#floor-19" ).load(filesArray[18]);</script>
+        </div>
+        <div class="floor floor-20" id="floor-20">
+          <script>$( "#floor-20" ).load(filesArray[19]);</script>
+        </div>
+        <div class="floor floor-21" id="floor-21">
+          <script>$( "#floor-21" ).load(filesArray[20]);</script>
+        </div>
+        <!--
+        <div class="floor floor-22" id="floor-22">
+        </div>
+        <div class="floor floor-23" id="floor-23">
+        </div>
+        <div class="floor floor-24" id="floor-24">
+        </div>
+        <div class="floor floor-25" id="floor-25">
+        </div>
+        <div class="floor floor-26" id="floor-26">
+        </div>
+      -->
+      </div><!-- end pagesWrapper -->
+    </div>
 
     <div class="footer">
-      <!--<a href="" class="prev">Click here or press the left arrow key to go back.</a>-->
       <ul class="progress">
         <li class="selected">1</li>
         <li>2</li>
@@ -140,15 +172,14 @@
         <li>18</li>
         <li>19</li>
         <li>20</li>
-        <!--
         <li>21</li>
         <li>22</li>
         <li>23</li>
         <li>24</li>
         <li>25</li>
         <li>26</li>
-      -->
       </ul>
     </div>
+
   </body>
 </html>
