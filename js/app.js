@@ -7,7 +7,7 @@ $(document).ready(function() {
     });
     collapsed_links.bind('click', function(event){
       event.preventDefault();
-      $(this).hide().prev().hide();
+      $(this).hide();
       $(this).next().show();
     });
   };
@@ -36,10 +36,16 @@ $(document).ready(function() {
      'whyAChoice',
      'noSurvivalBenefit',
      'whyMedical',
+     'whyMedicalText',
      'whyTransplant',
+     'whyTransplantText',
      'goingOffOxygen',
      'whyNotMedical',
+     'whyNotMedicalText',
      'whyNotTransplant',
+     'whyNotTransplantText',
+     'valuesIntro',
+     'valuesQuestion1',
      'ventilator',
      'repeatHospitalVisits',
      'kidneyDamage',
