@@ -65,6 +65,9 @@ img {
 }
 .breadcrumb {
   margin-top: 0;
+  color: #9B988E;
+  margin-bottom: 0.3em;
+  font-style: italic;
 }
 ul {
   padding: 0;
@@ -197,24 +200,35 @@ img.arrow-keys {
   float: left;
   margin-right: 1em;
 }
+.vq-response {
+  margin-bottom: 4em;
+}
 .scale-end-explanation {
   display: inline-block;
-  width: 23%;
-  font-size: 0.875em
+  width: 22%;
+  font-size: 0.85em;
 }
 .scale-end-explanation span {
   font-size: 1.35em;
   display: block;
+  font-weight: bold;
 }
 .vq-response button {
   font-size: 2em;
   width: 10%;
   height: 3em;
+  vertical-align: top;
+  margin-top: 0.66em;
+  color: #ffffff;
+  cursor:pointer;
+  text-decoration:none;
+  -moz-border-radius:3px;
+  -webkit-border-radius:3px;
+  border-radius:3px;
 }
 .vq-response .vq5 {
   margin-right: 2%;
 }
-
 .vq1 {
   -moz-box-shadow:inset 0px 1px 0px 0px #cf866c;
   -webkit-box-shadow:inset 0px 1px 0px 0px #cf866c;
@@ -227,14 +241,7 @@ img.arrow-keys {
   background:linear-gradient(to bottom, #d0451b 5%, #bc3315 100%);
   filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#d0451b', endColorstr='#bc3315',GradientType=0);
   background-color: #d0451b;
-  -moz-border-radius:3px;
-  -webkit-border-radius:3px;
-  border-radius:3px;
   border:1px solid #942911;
-  display:inline-block;
-  cursor:pointer;
-  color:#ffffff;
-  text-decoration:none;
   text-shadow:0px 1px 0px #854629;
 }
 .vq1:hover {
