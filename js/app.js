@@ -46,6 +46,8 @@ $(document).ready(function() {
      'whyNotTransplantText',
      'valuesIntro',
      'valuesQuestion1',
+     'valuesQuestion2',
+     'valuesQuestion3',
      'ventilator',
      'repeatHospitalVisits',
      'kidneyDamage',
