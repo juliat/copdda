@@ -35,7 +35,6 @@ $(document).ready(function() {
      'surgeriesForCOPD',
      'whyAChoice',
      'noSurvivalBenefit',
-     'whyMedical',
      'whyMedicalText',
      'whyTransplant',
      'whyTransplantText',
