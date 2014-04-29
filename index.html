@@ -7,43 +7,74 @@
     <script type="text/javascript" src="js/jquery-1.11.0.js"></script>
     <!-- paging plugin -->
     <script type="text/javascript" src="js/jquery.ascensor.min.js"></script>
+    <!-- keyboard event handling library -->
+    <script type="text/javascript" src="js/mousetrap.min.js"></script>
     <!-- custom code linking plugins to our content -->
     <script type="text/javascript" src="js/app.js"></script>
   </head>
   <body>
+    <script>
+        var filesArray = [
+        "decisionAidIntro.html",
+        "whoIsThisFor.html",
+        "whatIsCOPD.html",
+        "whatDoesCOPDStandFor.html",
+        "whatIsChronicBronchitis.html",
+        "whatIsEmphysema.html",
+        "howTreatmentsWork.html",
+        "COPDMedicines.html",
+        "exerciseForCOPD.html",
+        "surgeriesForCOPD.html",
+        "whyAChoice.html",
+        "noSurvivalBenefit.html",
+        "whyMedicalText.html",
+        "medicalBenefitControl.html",
+        "medicalBenefitExpense.html",
+        "medicalBenefitDrugs.html",
+        "medicalBenefitCaregiver.html",
+        "whyTransplant.html",
+        "whyTransplantText.html",
+        "goingOffOxygen.html",
+        "goingOffOxygenChances.html",
+        "whyNotMedical.html",
+        "whyNotMedicalText.html",
+        "medicalRiskInconsistent.html",
+        "medicalRiskShortOfBreath.html",
+        "medicalRiskStillNeedOxygen.html",
+        "medicalRiskLimitedIndependence.html",
+        "whyNotTransplant.html",
+        "whyNotTransplantText.html",
+        "valuesIntro.html",
+        "valuesQuestion1.html",
+        "valuesQuestion2.html",
+        "valuesQuestion3.html",
+        "ventilator.html",
+        "repeatHospitalVisits.html",
+        "kidneyDamage.html",
+        "rejection.html",
+        "frequentMedicineUse.html"
+        ]
+    </script>
     <div id="pagesWrapper">
       <div class="floor floor-1" id="floor-1">
-        <h1>COPD Decision Aid Whee</h1>
-        <p>A tool for education and reflection for patients with Chronic Obstructive Pulmonary Disease who are considering their treatment options.</p>
-        <h2>How do I use this website?</h2>
-        <p>To go between pages on this website, use the arrow keys on your keyboard. The right arrow key will move you forward through the pages of the website, and the left arrow key will move you back (to the previous page you viewed). On any page, you can press the "H" key to hear the text on the page read aloud. On some pages, there will be more instructions on how to use the keys on the keyboard to use the website.</p>
-        <img src="img/arrowkeys.jpg"/>
+       <script>$( "#floor-1" ).load(filesArray[0]);</script>
       </div>
       <div class="floor floor-2" id="floor-2">
-        <h1>Who is this website meant for?</h1>
-        <p>This website and the text, pictures, and videos on it are meant to inform patients with severe Chronic Obstructive Pulmonary Disease (COPD) <a href="">(What is COPD?)</a> about their treatment options. It focuses especially on the choice between managing COPD using medicines and getting a lung transplant.</p>
-        <h2>Who is this website NOT meant for?</h2>
-        <p>This website isn't for you if...</p>
-        <ul>
-          <li>Case 1</li>
-          <li>Case 2</li>
-        </ul>
+       <script>$( "#floor-2" ).load(filesArray[1]);</script>
       </div>
       <div class="floor floor-3" id="floor-3">
-        <h1>What is COPD?</h1>
-        <!-- placeholder vid -->
-        <iframe width="640" height="360" src="//www.youtube.com/embed/aktIMBQSXMo?feature=player_embedded" frameborder="0" allowfullscreen></iframe>
+        <script>$( "#floor-3" ).load(filesArray[2]);</script>
       </div>
       <div class="floor floor-4" id="floor-4">
-        <h1>How do COPD treatments work?</h1>
-        <p>Medicines for COPD reduce swelling in the lungs, making it easier to breathe. Exercising helps your lungs work better, like they did before you had COPD.</p>
+        <script>$( "#floor-4" ).load(filesArray[3]);</script>
       </div>
       <div class="floor floor-5" id="floor-5">
+<<<<<<< HEAD
         <h1>Why do you have a choice about your treatment for COPD?</h1>
         <p>Many patients with COPD wonder why they have a choice about their treatment for COPD. "Shouldn't the doctor be telling me what to do?" is a common thought.</p>
         <p>The reason that you have been given a choice between <strong>treating COPD medically</strong> and <strong>getting a lung transplant</strong> is that neither treatment option has more of a <em>survival benefit.</em> In other words, most patients will live about the same amount of time no matter whether they treat their COPD with medicine or get a transplant.</p>
       </div>
-      <div class="floor floor-6 wide" id="floor-6">
+      <div class="floor floor-6" id="floor-6">
         <h1>Benefits Overview</h1>
         <div class="medical">
           <h2>Why treat COPD medically?</h2>
@@ -156,40 +187,82 @@
         <h1>Kidney Failure</h1>
         <p>Your kidneys help you filter waste products from the blood. When the kidneys are under stress for a long period of time, they can stop working as well as they used to work. This can cause fatigue and shortness of breath in the short term and can require a kidney transplant if waste builds up in the system.</p>
         <p>Out of 100 patients like you, 23 will experience kidney failure in the first year after transplant. After 5 years, 55 will experience kidney failure.</p>
+=======
+         <script>$( "#floor-5" ).load(filesArray[4]);</script>
+>>>>>>> FETCH_HEAD
       </div>
-
-      <div class="floor floor-21 trisk3" id="trisk3">
-        <h1>Extended Hospital Stay</h1>
-        <p>Complications after the lung transplant can sometimes require you to stay in the hospital for a length of time immediately after surgery. This can be due to several different problems that the doctors want to monitor. It is likely that with a complication, you would stay 3-5 days in the Intensive Care Unit, followed by a month in the hospital afterwards. You would be required to live within 2 hours distance from the hospital for two to three months after you leave.</p>
-        <p>Out of 100 patients like you, 16 will have a one-month hospital stay after surgery. 5 will have a hospital stay of 2 or more months. </p>
+      <div class="floor floor-6" id="floor-6">
+         <script>$( "#floor-6" ).load(filesArray[5]);</script>
       </div>
-
-      <div class="floor floor-22 valuequiz" id="valuequiz">
-        <h1>Values Quiz</h1>
-        <p>Many patients with COPD wonder why they have a choice about their treatment for COPD. "Shouldn't the doctor be telling me what to do?" is a common thought.</p>
+      <div class="floor floor-7" id="floor-7">
+        <script>$("#floor-7" ).load(filesArray[6]);</script>
       </div>
-      <div class="floor floor-23 value1" id="value1">
-        <h1>Extended Hospital Stay</h1>
-        <p>Treating COPD can mean spending time in the hospital. How would you rate your last hospital stay?</p>
+      <div class="floor floor-8" id="floor-8">
+       <script>$( "#floor-8" ).load(filesArray[7]);</script>
       </div>
-      <div class="floor floor-24 value2" id="value2">
-        <h1>Activities</h1>
-        <p>Successful treatment of COPD allows some patients to get back to doing everyday activities like housework, shopping, and driving. How active was your life pre-COPD?</p>
+      <div class="floor floor-9" id="floor-9">
+        <script>$( "#floor-9" ).load(filesArray[8]);</script>
       </div>
-      <div class="floor floor-25 value3" id="value3">
-        <h1>Caregiver Stress</h1>
-        <p>Caregivers play a big role in COPD patients’ treatment. Sometimes, this can be hard on the caregiver. How would you rate your support system in terms of their helpfulness?</p>
+      <div class="floor floor-10" id="floor-10">
+        <script>$( "#floor-10" ).load(filesArray[9]);</script>
       </div>
-      <!--
-      <div class="floor floor-26" id="scale">
-        <h1>Scale</h1>
-        <p>Now that you have answered these questions about your lifestyle, this scale will help you understand how your values fit in with either medical management or transplant. </p>
+      <div class="floor floor-11" id="floor-11">
+        <script>$( "#floor-11" ).load(filesArray[10]);</script>
       </div>
-      <div></div>
-    -->
+      <div class="floor floor-12" id="floor-12">
+        <script>$( "#floor-12" ).load(filesArray[11]);</script>
+      </div>
+      <div class="floor floor-13" id="floor-13">
+         <script>$( "#floor-13" ).load(filesArray[12]);</script>
+      </div>
+      <div class="floor floor-14" id="floor-14">
+        <script>$( "#floor-14" ).load(filesArray[13]);</script>
+      </div>
+      <div class="floor floor-15" id="floor-15">
+         <script>$( "#floor-15" ).load(filesArray[14]);</script>
+      </div>
+      <div class="floor floor-16" id="floor-16">
+        <script>$( "#floor-16" ).load(filesArray[15]);</script>
+      </div>
+      <div class="floor floor-17" id="floor-17">
+        <script>$( "#floor-17" ).load(filesArray[16]);</script>
+      </div>
+      <div class="floor floor-18" id="floor-18">
+        <script>$( "#floor-18" ).load(filesArray[17]);</script>
+      </div>
+      <div class="floor floor-19" id="floor-19">
+        <script>$( "#floor-19" ).load(filesArray[18]);</script>
+      </div>
+      <div class="floor floor-20" id="floor-20">
+        <script>$( "#floor-20" ).load(filesArray[19]);</script>
+      </div>
+      <div class="floor floor-21" id="floor-21">
+        <script>$( "#floor-21" ).load(filesArray[20]);</script>
+      </div>
+      <div class="floor floor-22" id="floor-22">
+        <script>$( "#floor-22" ).load(filesArray[21]);</script>
+      </div>
+      <div class="floor floor-23" id="floor-23">
+        <script>$( "#floor-23" ).load(filesArray[22]);</script>
+      </div>
+      <div class="floor floor-24" id="floor-24">
+        <script>$( "#floor-24" ).load(filesArray[23]);</script>
+      </div>
+      <div class="floor floor-25" id="floor-25">
+        <script>$( "#floor-25" ).load(filesArray[24]);</script>
+      </div>
+      <div class="floor floor-26" id="floor-26">
+        <script>$( "#floor-26" ).load(filesArray[25]);</script>
+      </div>
+      <div class="floor floor-27" id="floor-27">
+        <script>$( "#floor-27" ).load(filesArray[26]);</script>
+      </div>
+      <div class="floor floor-28" id="floor-28">
+        <script>$( "#floor-28" ).load(filesArray[27]);</script>
+      </div>
     </div><!-- end pagesWrapper -->
+
     <div class="footer">
-      <a href="" class="prev">Click here or press the left arrow key to go back.</a>
       <ul class="progress">
         <li class="selected">1</li>
         <li>2</li>
@@ -217,8 +290,10 @@
         <li>24</li>
         <li>25</li>
         <li>26</li>
+        <li>27</li>
+        <li>28</li>
       </ul>
-      <a href="" class="next">Click here or press the right arrow key to go forward.</a>
-    </div><!-- end footer -->
+    </div>
+
   </body>
 </html>
