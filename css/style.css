@@ -289,3 +289,16 @@ table.comparison.transplant-highlight td:first-child,
 table.comparison.transplant-highlight th:first-child {
  color: #aaa;
 }
+
+/* icon styles */
+td.moreControl {
+  background-image: url("/img/icons/moreControl");
+}
+table.comparison td.goOffOxygen {
+  background-image: url("/img/icons/oxygenTank/icon_34291.png")
+;
+  background-repeat: no-repeat;
+  background-size: 25%;
+  background-position: -3% 41%;
+  padding-left: 9%;
+}
