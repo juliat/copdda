@@ -40,6 +40,7 @@ $(document).ready(function() {
      'medicalBenefitExpense',
      'medicalBenefitDrugs',
      'medicalBenefitCaregiver',
+<<<<<<< HEAD
      'benefitsComparison2',
      'transplantBenefitGoingOffOxygen',
      'transplantBenefitGoingOffOxygenChances',
@@ -48,6 +49,12 @@ $(document).ready(function() {
      'transplantBenefitKeepUpFamily',
      'benefitsComparison',
      'risksComparison',
+=======
+     'whyTransplant',
+     'whyTransplantText',
+     'goingOffOxygen',
+     'goingOffOxygenChances',
+>>>>>>> parent of 3872647... New pages added. However, some chance graphs are not showing up.
      'whyNotMedical',
      'whyNotMedicalText',
      'medicalRiskInconsistent',
