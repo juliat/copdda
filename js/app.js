@@ -55,6 +55,7 @@ $(document).ready(function() {
      'ventilator',
      'repeatHospitalVisits',
      'kidneyDamage',
+     'kidneyDamageVideo',
      'rejection',
      'frequentMedicineUse',
      'valuesIntro',
