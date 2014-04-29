@@ -270,35 +270,3 @@ img.arrow-keys {
   position:relative;
   top:1px;
 }
-table.comparison {
-  margin-top: 3em;
-  border-collapse: collapse;
-}
-table.comparison td,
-table.comparison th {
-  width: 50%;
-  vertical-align: top;
-  padding: 1.35em;
-  border: 1px solid #ccc;
-}
-table.comparison th {
-  border-top: 1px solid #ccc;
-  padding: 0.35em;
-}
-table.comparison.transplant-highlight td:first-child,
-table.comparison.transplant-highlight th:first-child {
- color: #aaa;
-}
-
-/* icon styles */
-td.moreControl {
-  background-image: url("/img/icons/moreControl");
-}
-table.comparison td.goOffOxygen {
-  background-image: url("/img/icons/oxygenTank/icon_34291.png")
-;
-  background-repeat: no-repeat;
-  background-size: 25%;
-  background-position: -3% 41%;
-  padding-left: 9%;
-}
