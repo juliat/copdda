@@ -47,12 +47,14 @@ $(document).ready(function() {
      'transplantBenefitIndependence',
      'transplantBenefitKeepUpFamily',
      'benefitsComparison',
+     'risksComparison',
      'whyNotMedical',
      'whyNotMedicalText',
      'medicalRiskInconsistent',
      'medicalRiskShortOfBreath',
      'medicalRiskStillNeedOxygen',
      'medicalRiskLimitedIndependence',
+     'risksComparison2',
      'whyNotTransplant',
      'whyNotTransplantText',
      'ventilator',
@@ -60,11 +62,12 @@ $(document).ready(function() {
      'kidneyDamage',
      'rejection',
      'frequentMedicineUse',
+     'risksComparison',
      'valuesIntro',
      'valuesQuestion1',
      'valuesQuestion2',
      'valuesQuestion3',
-     
+
      ],
     }
   );
