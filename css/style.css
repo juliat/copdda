@@ -285,3 +285,7 @@ table.comparison th {
   border-top: 1px solid #ccc;
   padding: 0.35em;
 }
+table.comparison.transplant-highlight td:first-child,
+table.comparison.transplant-highlight th:first-child {
+ color: #aaa;
+}
