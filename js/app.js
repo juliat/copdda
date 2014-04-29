@@ -38,7 +38,6 @@ $(document).ready(function() {
      'treatmentsSurvivalNumbers',
 
      'benefitsComparison1',
-     'whyMedicalText',
      'medicalBenefitControl',
      'medicalBenefitExpense',
      'medicalBenefitDrugs',
@@ -48,8 +47,11 @@ $(document).ready(function() {
      'transplantBenefitGoingOffOxygen',
      'transplantBenefitGoingOffOxygenChances',
      'transplantBenefitMobility',
+     'transplantBenefitMobilityChances',
      'transplantBenefitIndependence',
-     'transplantBenefitKeepUpFamily',
+     'transplantBenefitIndependenceChances',
+     'transplantBenefitFamily',
+     'transplantBenefitFamilyChances',
      'benefitsComparison3',
 
      'risksComparison1',
@@ -61,7 +63,6 @@ $(document).ready(function() {
      'medicalRiskLimitedIndependence',
 
      'risksComparison2',
-     'whyNotTransplant',
      'transplantRiskNotGetNewLungs',
      'transplantRiskToxicDrugs',
      'transplantRiskToxicDrugsChances',
@@ -91,6 +92,7 @@ $(document).ready(function() {
      'valuesQuestion1',
      'valuesQuestion2',
      'valuesQuestion3',
+     'valuesEnd',
      ],
     }
   );
