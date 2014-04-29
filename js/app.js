@@ -42,18 +42,6 @@ $(document).ready(function() {
      'medicalBenefitDrugs',
      'medicalBenefitCaregiver',
      'benefitsComparison2',
-     /*
-     'whyTransplant',
-     'whyTransplantText',
-     'goingOffOxygen',
-     'goingOffOxygenChances',
-     'getAroundMore',
-     'gettingAroundMoreChances',
-     'BeIndependent',
-     'BeIndependentChances',
-     'qualityTimeFamily',
-     'qualityTimeFamilyChances'
-     */
      'transplantBenefitGoingOffOxygen',
      'transplantBenefitGoingOffOxygenChances',
      'transplantBenefitMobility',
@@ -93,7 +81,6 @@ $(document).ready(function() {
      'valuesQuestion1',
      'valuesQuestion2',
      'valuesQuestion3',
-
      ],
     }
   );
