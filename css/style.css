@@ -302,3 +302,10 @@ table.comparison td.goOffOxygen {
   background-position: -3% 41%;
   padding-left: 9%;
 }
+figure { padding: 0; margin: 0;}
+figure.figure-left img {
+  width: 50%;
+  float: left;
+  padding-right: 1em;
+  padding-top: 1em;
+}
