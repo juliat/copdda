@@ -69,6 +69,10 @@ img {
   margin-bottom: 0.3em;
   font-style: italic;
 }
+p.breadcrumb:before {
+  content: "COPD Treatment Decision Aid: ";
+  color: #B8B4A7;
+}
 ul {
   padding: 0;
   list-style-position: outside;
@@ -120,7 +124,7 @@ a:hover {
   padding-right: 8%;
 }
 .footer {
-  height: 8%;
+  height: 6%;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -129,17 +133,18 @@ a:hover {
 }
 .progress li {
   display: inline-block;
-  background-color: #ddd;
+  background-color: #3B5466;
   color: transparent;
   width: 1.2em;
-  height: 2.2em;
-  border-radius: 0.4em;
+  height: 1.2em;
+  border-radius: 0.6em;
   font-size: 11px;
   margin-right: 0.1em;
 }
 .progress li.selected {
   color: transparent;
   background-color: #db5a23;
+  opacity: 1;
 }
 /*
 .prev, .next {
@@ -308,4 +313,15 @@ figure.figure-left img {
   float: left;
   padding-right: 1em;
   padding-top: 1em;
+}
+@media only screen and (max-width : 1024px) {
+  .floor {
+    padding: 2.5em 15%;
+  }
+  .progress li {
+    width: 0.9em;
+    height: 0.9em;
+    margin-right: 0em;
+    margin-top: 0.1em;
+  }
 }
