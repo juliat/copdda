@@ -99,8 +99,11 @@ a:hover {
   content: "←";
 }
 .floor {
-  padding: 3em 23%;
+  padding: 3em 8% 5em 8%;
   background-color: #FCF9F0;
+}
+h1, h2, p, ul, li {
+  max-width: 60%;
 }
 /*
 .floor:nth-child(n) {
@@ -165,6 +168,7 @@ a:hover {
 .progress {
   margin-top: 0.6%;
   padding-left: 1em;
+  max-width: none;
 }
 /* two column layout */
 .medical, .transplant {
