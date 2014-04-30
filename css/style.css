@@ -1,5 +1,8 @@
+@import 'reset.css';
+
 * {
   box-sizing: border-box;
+  -moz-box-sizing: border-box;
 }
 #pagesWrapper {
   overflow-x: hidden;
@@ -13,11 +16,22 @@
 }
 .peopleviz svg {
     height: 245px;
-    float: left;
-    width: 200px;
-    margin: 0 -1.25em 1.35em -2.15em;
-    padding: 0;
+    width: 300px;
+    margin: 0 8px;
+    padding: 0 8px;
 }
+
+.svg-container{
+  margin: 0 8px;
+  display: inline-block;
+  float: left;
+}
+
+#off_o2_viz g{
+  padding: 0 8px;
+  width: 300px;
+}
+
 #off_o2_viz g:nth-child(-n+90){
   fill: green;
 }
@@ -35,29 +49,41 @@
 http://type-scale.com/?size=22&scale=1.200&text=A%20Visual%20Type%20Scale&webfont=Gentium%20Book%20Basic&font-family=%27Gentium%20Book%20Basic%27%2C%20serif&font-weight=400&font-family-headers=%22Open%20Sans%22&font-weight-headers=700&background-color=&font-color=%2324272C
 */
 body {
-  font-size: 1.375em;
-  font-family: 'Gentium Book Basic', serif;
+  font-size: 1em;
+  /*font-family: 'Gentium Book Basic', serif;*/
+  font-family: 'Adobe Garamond Pro', serif;
   font-weight: 400;
-  line-height: 1.45;
   color: #000;
   text-rendering: optimizeLegibility;
 }
-p {margin-bottom: 1.3em;}
+
+.clear{
+  clear:both;
+}
+
+p {
+  margin-bottom: 8px;
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+
 li {
   margin-bottom: 0.75em;
+  font-size: 1.5em;
+  line-height: 1.5em;
 }
 h1, h2, h3, h4 {
-  margin: 1.414em 0 0.5em;
+  margin-bottom: 8px;
   font-family: "Open Sans";
   font-weight: 700;
-  line-height: 1.2;
 }
 h1 {
   margin-top: 0;
-  font-size: 2.074em;
+  font-size: 2em;
+  line-height: 1.25em;
 }
 /*h2 {font-size: 1.728em;}*/
-h2 {font-size: 1.44em;}
+h2 {font-size: 1.3em;}
 h3 {font-size: 1.2em;}
 small, .font_small {font-size: 0.833em;}
 img {
@@ -95,7 +121,8 @@ a:hover {
   content: "←";
 }
 .floor {
-  padding: 3em 23%;
+  width: 100%;
+  padding: 64px 256px;
   background-color: #FCF9F0;
 }
 /*
@@ -119,6 +146,52 @@ a:hover {
   padding-left: 8%;
   padding-right: 8%;
 }
+
+.next-button, .prev-button{
+  position: fixed;
+  top: 0;
+  bottom: 8%;
+  height: 92%;
+  width: 192px;
+  background: none;
+  opacity: 0.2;
+  z-index: 1000;
+}
+
+.next-button{
+  right: 0;
+}
+
+.prev-button{
+  left: 0;
+}
+
+.next-button:hover, .prev-button:hover{
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.next-button:active, .prev-button:active{
+  opacity: 0.7;
+}
+
+.other-footer{
+   background: #124468;
+}
+
+.half img{
+  width: 100%;
+}
+
+.half{
+  width: 46.92%;
+  float: left;
+}
+
+.margin-right{
+  margin-right: 4.166%;
+}
+
 .footer {
   height: 8%;
   position: fixed;
@@ -127,16 +200,22 @@ a:hover {
   width: 100%;
   background: #122B3E;
 }
+
 .progress li {
   display: inline-block;
   background-color: #ddd;
   color: transparent;
-  width: 1.5em;
-  height: 2.427em;
-  border-radius: 0.4em;
+  width: 2em;
+  float: left;
+  height: 2em;
   font-size: 11px;
-  margin-right: 0.1em;
+  margin-bottom: 1em;
 }
+
+.progress li:hover{
+  cursor: pointer;
+}
+
 .progress li.selected {
   color: transparent;
   background-color: #db5a23;
@@ -158,7 +237,7 @@ a:hover {
     width: 60%;
 }*/
 .progress {
-  margin-top: 0.6%;
+  margin-top: 1em;
   padding-left: 1em;
 }
 /* two column layout */
@@ -176,14 +255,24 @@ a:hover {
    padding-left: 5%;
 }
 
+.video{
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  margin-bottom: 8.33%;
+  margin-top: 4.166%;
+}
+
 .video p {
   font-size: 0.9em;
   margin-top: 0;
 }
-.video video{
+.video video,.video iframe{
   width: 100%;
-  height: auto;
+  height: 100%;
+  position: absolute;
 }
+
 .vidInstructions svg {
     height: 1.6em;
     margin: 0 -1.5em;
@@ -195,11 +284,7 @@ a:hover {
   margin-top: 0;
   font-size: 0.9em;
 }
-img.arrow-keys {
-  width: 50%;
-  float: left;
-  margin-right: 1em;
-}
+
 .vq-response {
   margin-bottom: 4em;
 }

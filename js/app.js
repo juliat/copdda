@@ -1,5 +1,6 @@
 $(document).ready(function() {
   /* handle collapsing of paragraphs */
+
   function setUpCollapsedParagraphs() {
     var collapsed_links = $('.preview');
     collapsed_links.each(function(){
@@ -98,6 +99,4 @@ $(document).ready(function() {
     window.scrollBy(0, 100);
     */
   });
-
-
 });
