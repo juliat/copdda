@@ -54,8 +54,8 @@ $(document).ready(function() {
      'transplantBenefitFamilyChances',
      'benefitsComparison3',
 
+     'risksIntro',
      'risksComparison1',
-     'whyNotMedical',
      'medicalRiskInconsistent',
      'medicalRiskShortOfBreath',
      'medicalRiskStillNeedOxygen',
