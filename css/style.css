@@ -99,7 +99,7 @@ a:hover {
   content: "←";
 }
 .floor {
-  padding: 3em 6% 5em 8%;
+  padding: 3em 6% 4em 8%;
   background-color: #FCF9F0;
 }
 h1, h2, h3 {
@@ -108,23 +108,6 @@ h1, h2, h3 {
 p, ul, ol {
   max-width: 60%;
 }
-/*
-.floor:nth-child(n) {
-  background-color: #f3f6e8;
-}
-.floor:nth-child(2n) {
-  background-color: #ecf8f8;
-}
-.floor:nth-child(3n) {
-  background-color: #fffbe2;
-}
-.floor:nth-child(4n) {
-  background-color: #fff2e9;
-}
-.floor:nth-child(5n) {
-  background-color: #fff2ff;
-}
-*/
 .video iframe {
   width: 710px;
   height: 399px;
@@ -152,22 +135,31 @@ p, ul, ol {
   background-color: #db5a23;
   opacity: 1;
 }
-/*
-.prev, .next {
-    display: inline-block;
-    height: 100%;
-    width: 20%;
-    line-height: 1.1;
-    padding: 0.5em 1em;
-    background: #aaa;
-    font-size: 0.95em;
+div.pageFooter {
+    width: 100%;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+    margin-top: 8em;
 }
-.prev, .progress, .next {
-  float: left;
-
-.progress {
-    width: 60%;
-}*/
+.pageFooter a {
+    display: inline-block;
+    width: 50%;
+    padding: 1em;
+    color: #db5a23;
+}
+.pageFooter a:hover {
+  background-color: #15c7d4;
+  color: #3B5466;
+  transition: all 0.2s linear;
+}
+.pageFooter a:active {
+  background-color: #2795b6;
+  transition: all 0.05s linear;
+}
+.pageFooter a.next {
+    text-align: right;
+    border-left: 1px solid #aaa;
+}
 .progress {
   margin-top: 0.6%;
   padding-left: 1em;
