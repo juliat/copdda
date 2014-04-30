@@ -140,6 +140,7 @@ div.pageFooter {
     border-top: 1px solid #aaa;
     border-bottom: 1px solid #aaa;
     margin-top: 8em;
+    clear: both;
 }
 .pageFooter a {
     display: inline-block;
