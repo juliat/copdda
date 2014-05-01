@@ -18,8 +18,29 @@
     margin: 0 -1.25em 1.35em -2.15em;
     padding: 0;
 }
+#morality_1yr_viz g:nth-child(-n+20){
+  fill: red;
+}
+#morality_5yr_viz g:nth-child(-n+50){
+  fill: red;
+}
+#repeatHospital_1yr_viz g:nth-child(-n+60){
+  fill: red;
+}
+#ventilator_viz g:nth-child(-n+10){
+  fill: red;
+}
+#oneMon_hospitalStay_viz g:nth-child(-n+16){
+  fill: red;
+}
+#twoMon_hospitalStay_viz g:nth-child(-n+5){
+  fill: red;
+}
 #off_o2_viz g:nth-child(-n+90){
   fill: green;
+}
+#not_off_o2_viz g:nth-child(-n+10){
+  fill: red;
 }
 #rejection_viz g:nth-child(-n+30){
   fill: red;

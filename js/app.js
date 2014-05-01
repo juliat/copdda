@@ -63,6 +63,7 @@ $(document).ready(function() {
      'notGetNewLungs',
      'stressfulExperience',        
      'repeatHospitalVisits',
+     'repeatHospitalVisitsChances',
      'breathingMachine',
      'breathingMachineChances',
      'kidneyDamageVideo',
