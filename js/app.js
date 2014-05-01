@@ -7,7 +7,6 @@ $(document).ready(function() {
      ascensorFloorName: [
      'intro',
      'whoIsThisFor',
-     'whatIsCOPD',
      'whatDoesCOPDStandFor',
      'whatIsChronicBronchitis',
      'whatIsEmphysema',
