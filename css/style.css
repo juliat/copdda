@@ -291,16 +291,27 @@ table.comparison.transplant-highlight th:first-child {
 }
 
 /* icon styles */
-td.moreControl {
-  background-image: url("/img/icons/moreControl");
+table.comparison td {
+  background-repeat: no-repeat;
+  background-position-x: 3%;
+  background-position-y: 40%;
+  padding-left: 8%;
+  background-size: 10%;
 }
 table.comparison td.goOffOxygen {
-  background-image: url("/img/icons/oxygenTank/icon_34291.png")
-;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position-x: 2%;
-  padding-left: 6%;
+  background-image: url("../img/icons/oxygenTank/icon_34291.png");
+}
+table.comparison td.moreControl {
+  background-image: url("../img/icons/dice/icon_14730.png");
+}
+table.comparison td.lessExpensive {
+  background-image: url("../img/icons/wallet/icon_22910.png");
+}
+table.comparison td.medicinesBetter {
+  background-image: url("../img/icons/medicine1/icon_7401.png");
+}
+table.comparison td.easierForCaregivers {
+  background-image: url("../img/icons/heartHome/icon_34196.png");
 }
 figure {
   padding: 0;

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" width="22px" height="22px" viewBox="0 0 22 22" version="1.1">
+    <title>love_net</title>
+    <description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
+    <defs/>
+    <g id="heart" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <path d="M2,8.50909424 L0,8.50909424 L11,0 L22,8.50909424 L20,8.50909424 L20,22 L2,22 L2,8.50909424 L2,8.50909424 Z M7.00003704,13.1479103 C7.00001236,13.1437534 7,13.1395937 7,13.1354313 C7,11.9560651 7.99199647,11 9.21568627,11 C9.94755332,11 10.5965431,11.3419867 11,11.8691958 C11.4034569,11.3419867 12.0524467,11 12.7843137,11 C14.0080035,11 15,11.9560651 15,13.1354313 C15,13.1394144 14.9999887,13.1433951 14.9999661,13.1473732 C14.9999887,13.1502939 15,13.153224 15,13.1561636 C14.9999998,16.0586915 11,18 11,18 C11,18 7.00000157,16.0586915 7,13.1561636 C7,13.1534038 7.00001235,13.1506528 7.00003704,13.1479105 L7.00003704,13.1479103 Z" id="love_net" fill="#000000" sketch:type="MSShapeGroup"/>
+    </g>
+</svg>
