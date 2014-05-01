@@ -293,8 +293,8 @@ table.comparison.transplant-highlight th:first-child {
 /* icon styles */
 table.comparison td {
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position-x: 2%;
+  background-size: 10%;
+  background-position-x: 3%;
   background-position-y: 40%;
   padding-left: 8%;
   background-size: 10%;
@@ -310,7 +310,6 @@ table.comparison td.lessExpensive {
 }
 table.comparison td.medicinesBetter {
   background-image: url("/img/icons/medicine1/icon_7401.png");
-  background-size: 12%;
 }
 table.comparison td.easierForCaregivers {
   background-image: url("/img/icons/heartHome/icon_34196.png");
