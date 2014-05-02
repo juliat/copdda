@@ -100,7 +100,7 @@ a:hover {
 }
 .floor {
   padding: 3em 6% 4em 8%;
-  background-color: #FCF9F0;
+  background-color: #FCF9DF;
 }
 h1, h2, h3 {
   max-width: 70%;
@@ -323,7 +323,10 @@ figure {
 figure img {
   max-width: 100%;
 }
-@media only screen and (max-width : 1024px) {
+@media screen and (orientation:landscape) and (max-device-width : 1024px) {
+  body {
+    font-size: 1.5em;
+  }
   .floor {
     padding: 2.5em 10%;
   }
@@ -335,5 +338,16 @@ figure img {
     height: 0.9em;
     margin-right: 0em;
     margin-top: 0.1em;
+  }
+}
+@media screen and (orientation:portrait) and (max-device-width : 1024px) {
+  body {
+    font-size: 1.5em;
+  }
+  .floor {
+    padding: 2.5em 3%;
+  }
+  p, ul, ol {
+    max-width: 75%;
   }
 }
