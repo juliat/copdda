@@ -325,7 +325,10 @@ figure img {
 }
 @media only screen and (max-width : 1024px) {
   .floor {
-    padding: 2.5em 15%;
+    padding: 2.5em 10%;
+  }
+  p, ul, ol {
+    max-width: 100%;
   }
   .progress li {
     width: 0.9em;
