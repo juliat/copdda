@@ -1,6 +1,10 @@
 * {
   box-sizing: border-box;
 }
+
+.clear{
+  clear: both;
+}
 #pagesWrapper {
   overflow-x: hidden;
   overflow-y: visible;
@@ -34,6 +38,13 @@
 /* type scale from
 http://type-scale.com/?size=22&scale=1.200&text=A%20Visual%20Type%20Scale&webfont=Gentium%20Book%20Basic&font-family=%27Gentium%20Book%20Basic%27%2C%20serif&font-weight=400&font-family-headers=%22Open%20Sans%22&font-weight-headers=700&background-color=&font-color=%2324272C
 */
+
+html, body{
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
 body {
   font-size: 1.375em;
   font-family: 'Gentium Book Basic', serif;
@@ -41,7 +52,10 @@ body {
   line-height: 1.45;
   color: #000;
   text-rendering: optimizeLegibility;
+  background-color: #FCF9DF;
+
 }
+
 p {margin-bottom: 1.3em;}
 li {
   margin-bottom: 0.75em;
@@ -84,13 +98,6 @@ a:hover {
   color: #15c7d4;
 }
 
-.next-page {
-  clear:both;
-  display: block;
-}
-.next-page:before {
-  content: "→ Click here to ";
-}
 .backToMain {
   display:block;
   clear:both;
@@ -99,18 +106,28 @@ a:hover {
   content: "←";
 }
 .floor {
-  padding: 3em 6% 4em 8%;
+  padding: 2.5% 20% 7.5% 20%;
   background-color: #FCF9DF;
 }
 h1, h2, h3 {
   max-width: 70%;
 }
-p, ul, ol {
-  max-width: 60%;
+p, ol {
+  max-width: 100%;
 }
+
+.video {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px; height: 0; overflow: hidden;
+}
+
 .video iframe {
-  width: 710px;
-  height: 399px;
+  position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 .footer {
   height: 6%;
@@ -137,30 +154,12 @@ p, ul, ol {
 }
 div.pageFooter {
     width: 100%;
-    border-top: 1px solid #aaa;
-    border-bottom: 1px solid #aaa;
-    margin-top: 8em;
-    clear: both;
 }
 .pageFooter a {
-    display: inline-block;
     width: 50%;
-    padding: 1em;
-    color: #db5a23;
+    float: left;
 }
-.pageFooter a:hover {
-  background-color: #15c7d4;
-  color: #3B5466;
-  transition: all 0.2s linear;
-}
-.pageFooter a:active {
-  background-color: #2795b6;
-  transition: all 0.05s linear;
-}
-.pageFooter a.next {
-    text-align: right;
-    border-left: 1px solid #aaa;
-}
+
 .progress {
   margin-top: 0.6%;
   padding-left: 1em;
@@ -323,6 +322,60 @@ figure {
 figure img {
   max-width: 100%;
 }
+
+.keepScrolling{
+  position: absolute;
+  bottom: 128px;
+  right: 64px;
+  height: 64px;
+  width: 64px;
+  background: #ff0000;
+  z-index: 1000;
+}
+
+ul.slidesjs-pagination{
+  position:fixed;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  z-index: 1000;
+  background: #122B3E;
+  padding: 0 16px 16px 16px;
+  text-align: center;
+}
+
+ul.slidesjs-pagination li{
+  margin-bottom: 0;
+  display: inline-block;
+}
+
+ul.slidesjs-pagination li a{
+  font-size: 0;
+  height: 16px;
+  width: 16px;
+  border-radius: 8px;
+  display: block;
+  background: #3B5466;
+  margin-right: 2px;
+}
+
+ul.slidesjs-pagination li a.active{
+  background: #db5a23;
+}
+
+.container{
+  width: 100%;
+  height: 100%;
+}
+
+#slides{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+
 @media screen and (orientation:landscape) and (max-device-width : 1024px) {
   body {
     font-size: 1.5em;
