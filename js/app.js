@@ -2,7 +2,7 @@ var ascensorInstance;
 $(document).ready(function() {
   var ascensor = $('#pagesWrapper').ascensor(
     {direction: 'x',
-     height: '94%',
+     height: '100%',
      jump: true,
      ascensorFloorName: [
      'intro',
@@ -94,5 +94,32 @@ $(document).ready(function() {
     /* tried simulating click on floor transition with no success */
     /* $("#floor-"+floor.to).click(); */
   });
+
+  var n = 0;
+
+  $(document).keydown(function(event){
+
+    if (event.keyCode == 40) {
+
+      event.preventDefault();
+
+      $('.floor').stop().animate({ scrollTop: n });
+      n += 100;
+
+    } else if (event.keyCode == 38) {
+
+      event.preventDefault();
+
+      $('.floor').stop().animate({ scrollTop: n });
+      n -= 100;
+
+    } else if (event.keycode == 39 || event.keycode == 37){
+      $('.floor').scrollTop(0);
+    }
+  });
+
+  $(window).scroll(function(){
+    
+  })
 
 });

@@ -1,6 +1,11 @@
 * {
   box-sizing: border-box;
 }
+
+.clear{
+  clear: both;
+}
+
 #pagesWrapper {
   overflow-x: hidden;
   overflow-y: visible;
@@ -35,14 +40,14 @@
 http://type-scale.com/?size=22&scale=1.200&text=A%20Visual%20Type%20Scale&webfont=Gentium%20Book%20Basic&font-family=%27Gentium%20Book%20Basic%27%2C%20serif&font-weight=400&font-family-headers=%22Open%20Sans%22&font-weight-headers=700&background-color=&font-color=%2324272C
 */
 body {
-  font-size: 1.375em;
+  font-size: 1em;
   font-family: 'Gentium Book Basic', serif;
   font-weight: 400;
   line-height: 1.45;
   color: #000;
   text-rendering: optimizeLegibility;
 }
-p {margin-bottom: 1.3em;}
+p {font-size: 1.375em;}
 li {
   margin-bottom: 0.75em;
 }
@@ -54,10 +59,10 @@ h1, h2, h3, h4 {
 }
 h1 {
   margin-top: 0;
-  font-size: 2.074em;
+  font-size: 2em;
 }
 /*h2 {font-size: 1.728em;}*/
-h2 {font-size: 1.44em;}
+h2 {font-size: 1.5em;}
 h3 {font-size: 1.2em;}
 small, .font_small {font-size: 0.833em;}
 img {
@@ -84,13 +89,6 @@ a:hover {
   color: #15c7d4;
 }
 
-.next-page {
-  clear:both;
-  display: block;
-}
-.next-page:before {
-  content: "→ Click here to ";
-}
 .backToMain {
   display:block;
   clear:both;
@@ -99,37 +97,62 @@ a:hover {
   content: "←";
 }
 .floor {
-  padding: 3em 6% 4em 8%;
+  padding: 2.5% 20% 7.5% 20%;
   background-color: #FCF9DF;
 }
 h1, h2, h3 {
   max-width: 70%;
 }
 p, ul, ol {
-  max-width: 60%;
+  width: 100%;
+}
+
+.video{
+  position: relative; 
+  padding-bottom: 56.25%;   
+  padding-top: 30px; height: 0; overflow: hidden;
 }
 .video iframe {
-  width: 710px;
-  height: 399px;
+  position: absolute;
+  top: 0;
+  height: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 .footer {
-  height: 6%;
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
   background: #122B3E;
+  padding: 4px;
 }
+
+.progress{
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .progress li {
   display: inline-block;
   background-color: #3B5466;
   color: transparent;
-  width: 1.2em;
-  height: 1.2em;
+  width: 8px;
+  height: 8px;
   border-radius: 0.6em;
-  font-size: 11px;
+  font-size: 8px;
   margin-right: 0.1em;
+  margin-bottom: 0;
+  margin-top: 0;
 }
+
+.progress li:hover{
+  cursor: pointer;
+  background-color: #4a6980;
+}
+
 .progress li.selected {
   color: transparent;
   background-color: #db5a23;
@@ -147,6 +170,7 @@ div.pageFooter {
     width: 50%;
     padding: 1em;
     color: #db5a23;
+    float: left;
 }
 .pageFooter a:hover {
   background-color: #15c7d4;
@@ -161,11 +185,7 @@ div.pageFooter {
     text-align: right;
     border-left: 1px solid #aaa;
 }
-.progress {
-  margin-top: 0.6%;
-  padding-left: 1em;
-  max-width: none;
-}
+
 /* two column layout */
 .medical, .transplant {
     width: 49%;
@@ -323,6 +343,16 @@ figure {
 figure img {
   max-width: 100%;
 }
+
+.keepScrolling{
+  height: 64px;
+  width: 64px;
+  position: fixed;
+  bottom: 64px;
+  right: 64px;
+  background: #ff0000;
+}
+
 @media screen and (orientation:landscape) and (max-device-width : 1024px) {
   body {
     font-size: 1.5em;
