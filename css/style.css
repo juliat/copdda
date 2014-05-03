@@ -126,7 +126,7 @@ p, ul, ol {
   left: 0;
   width: 100%;
   background: #122B3E;
-  padding: 4px;
+  padding: 8px;
 }
 
 .progress{
@@ -136,16 +136,16 @@ p, ul, ol {
 }
 
 .progress li {
-  display: inline-block;
+  float: left;
   background-color: #3B5466;
   color: transparent;
+  padding: 4px 0;
   width: 12px;
   height: 12px;
-  border-radius: 6px;
-  line-height: 20px;
+  border-radius: 12px;
   font-size: 8px;
-  margin-right: 0.1em;
-  margin-bottom: 0;
+  margin-right: 2px;
+  margin-bottom: 2px;
   margin-top: 0;
 }
 
@@ -357,7 +357,7 @@ figure img {
 .fontSizeAdjuster{
   position: fixed;
   top: 32px;
-  left: 160px;
+  left: 10%;
   height: 32px;
   width: 64px;
   text-align: center;
@@ -417,31 +417,32 @@ figure img {
     background: #cbc9b4;
 }
 
-@media screen and (orientation:landscape) and (max-device-width : 1024px) {
+@media screen and (max-width : 1024px) {
   body {
     font-size: 1.5em;
   }
   .floor {
     padding: 2.5em 10%;
   }
-  p, ul, ol {
-    max-width: 100%;
+
+  .fontSizeAdjuster{
+    left: 1%;
   }
+
   .progress li {
-    width: 0.9em;
-    height: 0.9em;
-    margin-right: 0em;
-    margin-top: 0.1em;
+    width: 10px;
+    height: 10px;
   }
 }
-@media screen and (orientation:portrait) and (max-device-width : 1024px) {
+@media screen and (max-width : 768px) {
   body {
     font-size: 1.5em;
   }
   .floor {
-    padding: 2.5em 3%;
+    padding: 2.5em 5%;
   }
-  p, ul, ol {
-    max-width: 75%;
+  .progress li {
+    width: 8px;
+    height: 8px;
   }
 }
