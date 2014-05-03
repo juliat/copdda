@@ -139,9 +139,10 @@ p, ul, ol {
   display: inline-block;
   background-color: #3B5466;
   color: transparent;
-  width: 8px;
-  height: 8px;
-  border-radius: 0.6em;
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  line-height: 20px;
   font-size: 8px;
   margin-right: 0.1em;
   margin-bottom: 0;
@@ -355,7 +356,7 @@ figure img {
 
 .fontSizeAdjuster{
   position: fixed;
-  top: 16px;
+  top: 32px;
   left: 160px;
   height: 32px;
   width: 64px;
@@ -373,6 +374,7 @@ figure img {
   border-bottom: 1px solid #ccc;
   border-top: 1px solid #ccc;
   text-decoration: none;
+  color: #666;
 }
 
 .fontSizeAdjuster a.fontSmaller{
@@ -397,6 +399,22 @@ figure img {
 
 .fontSizeAdjuster a:active{
   background: #eee;
+}
+
+::-webkit-scrollbar {
+    width: 24px;
+}
+ 
+::-webkit-scrollbar-track {
+    background: #e2e0c8;
+}
+ 
+::-webkit-scrollbar-thumb {
+    background: #b5b3a0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #cbc9b4;
 }
 
 @media screen and (orientation:landscape) and (max-device-width : 1024px) {

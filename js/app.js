@@ -2,7 +2,7 @@ var ascensorInstance;
 $(document).ready(function() {
   var ascensor = $('#pagesWrapper').ascensor(
     {direction: 'x',
-     height: '100%',
+     height: '96%',
      jump: true,
      ascensorFloorName: [
      'intro',
