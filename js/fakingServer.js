@@ -22,4 +22,26 @@ $(window).load(function(){
   $(".next").on('click',function() {
     ascensorInstance.next();
   });
+
+});
+
+$(document).ready(function(){
+    var n = 1;
+
+    function initFontSize(){
+        $(".body p").css("font-size", n + "em");
+    };
+
+    initFontSize();
+
+    $(".fontBigger").click(function(){
+        $("body p").css("font-size", n + "em");
+        n += 0.1;
+    });
+
+    $(".fontSmaller").click(function(){
+        $("body p").css("font-size", n + "em");
+        n -= 0.1;
+    });
+
 });

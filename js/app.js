@@ -117,9 +117,5 @@ $(document).ready(function() {
       $('.floor').scrollTop(0);
     }
   });
-
-  $(window).scroll(function(){
-    
-  })
-
 });
+
