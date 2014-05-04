@@ -1,16 +1,21 @@
-$(window).load(function(){
-  function loadVideoInstructions() {
-    $(".vidInstructions").each(function(){
-      $(this).load("youtubePlay.html");
-    });
-  };
+function loadVideoInstructions() {
+  $(".vidInstructions").each(function(){
+    $(this).load("youtubePlay.html");
+  });
+};
 
-  function addFooter() {
-    $('.floor').each(function(){
-      $(this).append("<div class='pageFooter'><a class='prev'>Click here to go to previous page</a><a class='next'>Click here to go to next page</a></div>");
-    });
-  };
+function addFooter() {
+  $('.floor').each(function(){
+    $(this).append("<div class='pageFooter'><a class='prev'>Click here to go to previous page</a><a class='next'>Click here to go to next page</a></div>");
+  });
+};
 
+var fontSize = 1;
+function initFontSize(){
+  $("body").css("font-size", fontSize + "em");
+};
+
+function setupPages() {
   addFooter();
   loadVideoInstructions();
 
@@ -22,26 +27,15 @@ $(window).load(function(){
   $(".next").on('click',function() {
     ascensorInstance.next();
   });
+  initFontSize();
 
-});
+  $(".fontBigger").click(function(){
+      $("body").css("font-size", fontSize + "em");
+      fontSize += 0.1;
+  });
 
-$(document).ready(function(){
-    var n = 1;
-
-    function initFontSize(){
-        $(".body p").css("font-size", n + "em");
-    };
-
-    initFontSize();
-
-    $(".fontBigger").click(function(){
-        $("body p").css("font-size", n + "em");
-        n += 0.1;
-    });
-
-    $(".fontSmaller").click(function(){
-        $("body p").css("font-size", n + "em");
-        n -= 0.1;
-    });
-
-});
+  $(".fontSmaller").click(function(){
+      $("body").css("font-size", fontSize + "em");
+      fontSize -= 0.1;
+  });
+};
