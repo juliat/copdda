@@ -6,7 +6,6 @@ $(window).load(function(){
   };
 
   function addFooter() {
-      debugger;
     $('.floor').each(function(){
       $(this).append("<div class='pageFooter'><a class='prev'>Click here to go to previous page</a><a class='next'>Click here to go to next page</a></div>");
     });
@@ -27,22 +26,22 @@ $(window).load(function(){
 });
 
 $(document).ready(function(){
-    var n = 1;
+    var fontSize = 1;
 
     function initFontSize(){
-        $(".body p").css("font-size", n + "em");
+        $("body p, body ol, body ul, body li").css("font-size", fontSize + "em");
     };
 
     initFontSize();
 
     $(".fontBigger").click(function(){
-        $("body p").css("font-size", n + "em");
-        n += 0.1;
+        $("body p, body ol, body ul, body li").css("font-size", fontSize + "em");
+        fontSize += 0.1;
     });
 
     $(".fontSmaller").click(function(){
-        $("body p").css("font-size", n + "em");
-        n -= 0.1;
+        $("body p, body ol, body ul, body li").css("font-size", fontSize + "em");
+        fontSize -= 0.1;
     });
 
 });

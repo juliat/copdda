@@ -96,7 +96,7 @@ $(document).ready(function() {
   });
 
   //initialize page scrolltop
-  var n = 0;
+  var scrollPosition = 0;
 
   $(document).keydown(function(event){
 
@@ -104,15 +104,16 @@ $(document).ready(function() {
       //down
       event.preventDefault();
       //move down 100px
-      $('.floor').stop().animate({ scrollTop: n });
-      n += 100;
+      $('.floor').stop().animate({ scrollTop: scrollPosition });
+      
+      scrollPosition += 100;
 
     } else if (event.keyCode == 38) {
       //up
       event.preventDefault();
       //move up 100px
-      $('.floor').stop().animate({ scrollTop: n });
-      n -= 100;
+      $('.floor').stop().animate({ scrollTop: scrollPosition });
+      scrollPosition -= 100;
 
     } else if (event.keycode == 39 || event.keycode == 37){
       //left or right
