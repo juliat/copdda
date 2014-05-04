@@ -16,6 +16,7 @@ function initFontSize(){
 };
 
 function setupPages() {
+  debugger;
   addFooter();
   loadVideoInstructions();
 

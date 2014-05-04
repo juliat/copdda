@@ -67,7 +67,7 @@ var filesArray = [
     "valuesQuestion2.html",
     "valuesQuestion3.html",
     "valuesEnd.html",
-    ]
+];
 
 function loadPages() {
     var numPages = filesArray.length;
@@ -77,7 +77,7 @@ function loadPages() {
     }
     // when files are loaded into pages, add in fakeServer stuff
     setupPages();
-}
+};
 
 $(document).ready(function(){
     loadPages();
