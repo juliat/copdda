@@ -99,20 +99,23 @@ a:hover {
   content: "←";
 }
 .floor {
-  padding: 2.5% 20% 7.5% 20%;
+  padding: 2.5% 20% 7.5% 5%;
   background-color: #FCF9DF;
 }
+
 h1, h2, h3 {
   max-width: 70%;
 }
 p, ul, ol {
   width: 100%;
+  max-width: 75%;
 }
 
 .video{
   position: relative; 
-  padding-bottom: 56.25%;   
+  padding-bottom: 43.25%;   
   padding-top: 30px; height: 0; overflow: hidden;
+  max-width: 75%;
 }
 .video iframe {
   position: absolute;
@@ -125,6 +128,7 @@ p, ul, ol {
 
 audio{
   width: 100%;
+  max-width: 75%;
 }
 
 .footer {
@@ -408,19 +412,19 @@ figure img {
   background: #eee;
 }
 
-::-webkit-scrollbar {
+.floor::-webkit-scrollbar {
     width: 24px;
 }
  
-::-webkit-scrollbar-track {
+.floor::-webkit-scrollbar-track {
     background: #e2e0c8;
 }
  
-::-webkit-scrollbar-thumb {
+.floor::-webkit-scrollbar-thumb {
     background: #b5b3a0;
 }
 
-::-webkit-scrollbar-thumb:hover {
+.floor::-webkit-scrollbar-thumb:hover {
     background: #cbc9b4;
 }
 

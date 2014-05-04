@@ -95,26 +95,31 @@ $(document).ready(function() {
     /* $("#floor-"+floor.to).click(); */
   });
 
+  //initialize page scrolltop
   var n = 0;
 
   $(document).keydown(function(event){
 
     if (event.keyCode == 40) {
-
+      //down
       event.preventDefault();
-
+      //move down 100px
       $('.floor').stop().animate({ scrollTop: n });
       n += 100;
 
     } else if (event.keyCode == 38) {
-
+      //up
       event.preventDefault();
-
+      //move up 100px
       $('.floor').stop().animate({ scrollTop: n });
       n -= 100;
 
     } else if (event.keycode == 39 || event.keycode == 37){
+      //left or right
+
+      //scroll back to the top
       $('.floor').scrollTop(0);
+
     }
   });
 });
