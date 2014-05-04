@@ -5,11 +5,35 @@ $(document).ready(function() {
      height: '96%',
      jump: true,
      ascensorFloorName: [
+     //Intro
      'intro',
      'whoIsThisFor',
      'whatDoesCOPDStandFor',
      'whatIsChronicBronchitis',
      'whatIsEmphysema',
+
+     //Medical Treatment
+     'medicalTreatmentTitle',
+     'medicalTreatmentProConTable',
+     'medicalTreatmentBenefitsList',
+     'medicalTreatmentBenefitsPlaylist',
+     'medicalTreatmentBenefitsChances',
+     'medicalTreatmentRisksList',
+     'medicalTreatmentRisksPlaylist',
+     'medicalTreatmentRisksChances',
+     'medicalTreatmentSummaryTable',
+
+     //Lung Transplant
+     'lungTransplantTitle',
+     'lungTransplantProConTable',
+     'lungTransplantBenefitsList',
+     'lungTransplantBenefitsPlaylist',
+     'lungTransplantBenefitsChances',
+     'lungTransplantRisksList',
+     'lungTransplantRisksPlaylist',
+     'lungTransplantRisksChances',
+     'lungTransplantSummaryTable',
+
      'howTreatmentsWork',
      'treatmentsCOPDMedicines',
      'treatmentsExerciseForCOPD',
