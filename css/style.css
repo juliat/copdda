@@ -345,29 +345,35 @@ table.comparison td {
   padding-left: 8%;
   background-size: 10%;
 }
-table.comparison td.goOffOxygen {
+.goOffOxygen {
   background-image: url("../img/icons/walking/walking.png");
 }
-table.comparison td.moreControl {
+.moreControl {
   background-image: url("../img/icons/gears/gears.png");
 }
-table.comparison td.lessExpensive {
+.lessExpensive {
   background-image: url("../img/icons/wallet/icon_22910.png");
 }
-table.comparison td.medicinesBetter {
+.medicinesBetter {
   background-image: url("../img/icons/medicine1/icon_7401.png");
 }
-table.comparison td.easierForCaregivers {
+.easierForCaregivers {
   background-image: url("../img/icons/heartHome/icon_34196.png");
 }
-table.comparison td.keepUpFamily {
+.keepUpFamily {
   background-image: url("../img/icons/kidOnShoulders/kidOnShoulders.png");
 }
-table.comparison td.moreIndependent {
+.moreIndependent {
   background-image: url("../img/icons/driving/driving.png");
 }
-table.comparison td.moreMobile {
+.moreMobile {
   background-image: url("../img/icons/keepUp/keepup.png");
+}
+h3.icon {
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-top: 0.8em;
+  padding-left: 2.66em;
 }
 figure {
   padding: 0;
