@@ -154,10 +154,11 @@ audio{
   padding: 8px;
 }
 
-.progress{
+ul.progress{
   text-align: center;
   margin-top: 0;
   margin-bottom: 0;
+  max-width: none;
 }
 
 .progress li {
@@ -382,7 +383,7 @@ figure img {
 .fontSizeAdjuster{
   position: fixed;
   top: 32px;
-  left: 10%;
+  right: 20%;
   height: 32px;
   width: 64px;
   text-align: center;
