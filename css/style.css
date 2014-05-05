@@ -352,7 +352,7 @@ table.comparison td {
   background-image: url("../img/icons/gears/gears.png");
 }
 .lessExpensive {
-  background-image: url("../img/icons/wallet/icon_22910.png");
+  background-image: url("../img/icons/coins/coins.png");
 }
 .medicinesBetter {
   background-image: url("../img/icons/medicine1/icon_7401.png");
@@ -368,6 +368,45 @@ table.comparison td {
 }
 .moreMobile {
   background-image: url("../img/icons/keepUp/keepup.png");
+}
+.MTmightNotWork {
+  background-image: url("../img/icons/ambulance/ambulance.png");
+}
+.needOxygen {
+  background-image: url("../img/icons/oxygenTank/oxygenTank.png");
+}
+.shortOfBreath {
+  background-image: url("../img/icons/cough.png");
+}
+.needInhalers {
+  background-image: url("../img/icons/inhaler-icon.png");
+}
+.independenceLimited {
+  background-image: url("../img/icons/wheelchair/wheelchair.png");
+}
+.travel {
+  background-image: url("../img/icons/airplane/airplane.png");
+}
+.noLungs {
+  background-image: url("../img/icons/dice/dice.png");
+}
+.toxicDrugs {
+  background-image: url("../img/icons/pillBottle/pillBottle.png");
+}
+.stressfulProcess {
+  background-image: url("../img/icons/stressed/stressed.png");
+}
+.complications {
+  background-image: url("../img/icons/patient/patient.png");
+}
+.intenseFollowup {
+  background-image: url("../img/icons/doctorsVisit/doctorsVisit.png");
+}
+.smallChanges {
+  background-image: url("../img/icons/no/no.png");
+}
+.expensive {
+  background-image: url("../img/icons/cash/cash.png");
 }
 h3.icon {
   background-size: contain;
