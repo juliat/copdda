@@ -13,19 +13,19 @@ $(document).ready(function() {
      //Medical Treatment
      'medicalTreatmentTitle',
      'medicalTreatmentProConTable',
-     'medicalTreatmentBenefitsPlaylist',
-     'medicalTreatmentBenefitsChances',
-     'medicalTreatmentRisksPlaylist',
-     'medicalTreatmentRisksChances',
+     'medicalTreatmentAdvantagesPlaylist',
+     'medicalTreatmentAdvantagesChances',
+     'medicalTreatmentDisadvantagesPlaylist',
+     'medicalTreatmentDisadvantagesChances',
      'medicalTreatmentSummaryTable',
 
      //Lung Transplant
      'lungTransplantTitle',
      'lungTransplantProConTable',
-     'lungTransplantBenefitsPlaylist',
-     'lungTransplantBenefitsChances',
-     'lungTransplantRisksPlaylist',
-     'lungTransplantRisksChances',
+     'lungTransplantAdvantagesPlaylist',
+     'lungTransplantAdvantagesChances',
+     'lungTransplantDisadvantagesPlaylist',
+     'lungTransplantDisadvantagesChances',
      'lungTransplantSummaryTable',
 
      //Values Quiz
