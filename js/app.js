@@ -8,7 +8,7 @@ $(document).ready(function() {
      //Intro
      'intro',
      'whoIsThisFor',
-     'whatDoesCOPDStandFor',
+     'whaIsCOPD',
 
      //Medical Treatment
      'medicalTreatmentTitle',
@@ -65,7 +65,7 @@ $(document).ready(function() {
       event.preventDefault();
       //move down 100px
       $('.floor').stop().animate({ scrollTop: scrollPosition });
-      
+
       scrollPosition += 100;
 
     } else if (event.keyCode == 38) {

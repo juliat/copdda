@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+<g id="Captions">
+	<rect x="-192" width="185" height="99"/>
+	<rect y="-36" width="100" height="30"/>
+	<text transform="matrix(1 0 0 1 66 -19.5)" fill="#000000" font-family="'Helvetica'" font-size="2.4">http://thenounproject.com</text>
+	<text transform="matrix(1 0 0 1 7.166 -24.5)"><tspan x="0" y="0" fill="#000000" font-family="'Helvetica-Bold'" font-size="6.1578">The Noun Project</tspan><tspan x="1.12" y="4.8" fill="#000000" font-family="'Helvetica-Bold'" font-size="4">Icon Template</tspan></text>
+	<text transform="matrix(1 0 0 1 -178.5 10.5)" fill="#000000" font-family="'Helvetica-Bold'" font-size="6.1578">Reminders</text>
+	<line fill="#000000" stroke="#FFFFFF" stroke-miterlimit="10" x1="8" y1="-14.5" x2="18" y2="-14.5"/>
+	<line fill="#000000" stroke="#FFFFFF" stroke-miterlimit="10" x1="-179" y1="16.5" x2="-162" y2="16.5"/>
+	<g>
+		<g>
+			<g>
+				<rect x="-170.802" y="31.318" fill="#000000" width="8.721" height="8.642"/>
+				<path fill="#000000" d="M-164.455,42.312h4.747v-4.703h-4.747V42.312z M-159.266,42.749h-5.63V37.17h5.63V42.749      L-159.266,42.749z M-166.221,44.062h8.279v-8.203h-8.279V44.062L-166.221,44.062z M-157.5,44.5h-9.163v-9.079h9.163V44.5      L-157.5,44.5z"/>
+				<polygon fill="#000000" points="-166.149,44.133 -166.292,43.991 -158.013,35.787 -157.871,35.929     "/>
+			</g>
+		</g>
+	</g>
+	<rect x="-179" y="58" fill="none" width="35" height="32.5"/>
+	<text transform="matrix(1 0 0 1 -179 60.1572)"><tspan x="0" y="0" fill="#000000" font-family="'Helvetica-Bold'" font-size="3">Strokes</tspan><tspan x="0" y="5" fill="#000000" font-family="'Helvetica'" font-size="2.4">Try to keep strokes at 4px</tspan><tspan x="0" y="10" fill="#000000" font-family="'Helvetica'" font-size="2.4">Minimum stroke weight is 2px</tspan><tspan x="0" y="14.5" fill="#000000" font-family="'Helvetica'" font-size="2.4">For thicker strokes use even </tspan><tspan x="0" y="17.5" fill="#000000" font-family="'Helvetica'" font-size="2.4">numbers: 6px, 8px etc.</tspan><tspan x="0" y="22" fill="#000000" font-family="'Helvetica-Bold'" font-size="2.4">Remember to expand strokes </tspan><tspan x="0" y="25" fill="#000000" font-family="'Helvetica-Bold'" font-size="2.4">before saving as an SVG </tspan></text>
+	<rect x="-136.5" y="58" fill="none" width="35" height="32.5"/>
+	<text transform="matrix(1 0 0 1 -136.5 60.1572)"><tspan x="0" y="0" fill="#000000" font-family="'Helvetica-Bold'" font-size="3">Size</tspan><tspan x="0" y="5" fill="#000000" font-family="'Helvetica'" font-size="2.4">Cannot be wider or taller than </tspan><tspan x="0" y="8.5" fill="#000000" font-family="'Helvetica'" font-size="2.4">100px (artboard size)</tspan><tspan x="0" y="13.5" fill="#000000" font-family="'Helvetica'" font-size="2.4">Scale your icon to fill as much of </tspan><tspan x="0" y="16.5" fill="#000000" font-family="'Helvetica'" font-size="2.4">the artboard as possible</tspan></text>
+	<rect x="-94" y="58" fill="none" width="35" height="32.5"/>
+	<text transform="matrix(1 0 0 1 -94 60.1572)"><tspan x="0" y="0" fill="#000000" font-family="'Helvetica-Bold'" font-size="3">Ungroup</tspan><tspan x="0" y="5" fill="#000000" font-family="'Helvetica'" font-size="2.4">If your design has more than one </tspan><tspan x="0" y="8" fill="#000000" font-family="'Helvetica'" font-size="2.4">shape, make sure to ungroup</tspan></text>
+	<rect x="-50" y="58" fill="none" width="35" height="32.5"/>
+	<text transform="matrix(1 0 0 1 -50 60.1572)"><tspan x="0" y="0" fill="#000000" font-family="'Helvetica-Bold'" font-size="3">Save as</tspan><tspan x="0" y="5" fill="#000000" font-family="'Helvetica'" font-size="2.4">Save as .SVG and make sure </tspan><tspan x="0" y="8" fill="#000000" font-family="'Helvetica'" font-size="2.4">&#8220;Use Artboards&#8221; is checked</tspan></text>
+	<text transform="matrix(1.0074 0 0 1 -125.542 30.5933)" fill="#000000" font-family="'Helvetica'" font-size="2.5731">100px</text>
+	<text transform="matrix(1.0074 0 0 1 -41 39)" fill="#000000" font-family="'Helvetica-Bold'" font-size="5.1462">.SVG</text>
+	<rect x="-126.514" y="34.815" fill="#000000" width="10.261" height="10.185"/>
+	<rect x="-126.477" y="31.766" fill="#000000" width="0.522" height="2.337"/>
+	<rect x="-116.812" y="31.766" fill="#000000" width="0.523" height="2.337"/>
+	<rect x="-127" y="32.337" fill="#000000" width="11.233" height="0.572"/>
+	<g>
+		<rect x="-83.805" y="33.844" fill="#000000" width="10.305" height="10.156"/>
+		<rect x="-76.809" y="28.707" fill="#000000" width="3.308" height="3.261"/>
+	</g>
+	<rect x="-178.5" y="22.5" fill="#000000" stroke="#FFFFFF" stroke-miterlimit="10" width="30" height="30"/>
+	<rect x="-136.5" y="22.5" fill="#000000" stroke="#FFFFFF" stroke-miterlimit="10" width="30" height="30"/>
+	<rect x="-93.5" y="22.5" fill="#000000" stroke="#FFFFFF" stroke-miterlimit="10" width="30" height="30"/>
+	<rect x="-49.5" y="22.5" fill="#000000" stroke="#FFFFFF" stroke-miterlimit="10" width="30" height="30"/>
+</g>
+<g id="Your_Icon">
+	<g id="Ellipse_2">
+		<g>
+			<circle fill-rule="evenodd" clip-rule="evenodd" fill="#000000" cx="46.104" cy="16.185" r="8.185"/>
+		</g>
+	</g>
+	<g id="Rounded_Rectangle_3">
+		<g>
+			<path fill-rule="evenodd" clip-rule="evenodd" fill="#000000" d="M47.468,27.44h-1.91c-2.637,0-4.775,2.098-4.775,4.685v31.149     c0,2.587,2.138,4.685,4.775,4.685h1.91c2.638,0,4.775-2.098,4.775-4.685V32.125C52.243,29.538,50.105,27.44,47.468,27.44z"/>
+		</g>
+	</g>
+	<g id="Rounded_Rectangle_3_copy">
+		<g>
+			<path fill-rule="evenodd" clip-rule="evenodd" fill="#000000" d="M67.851,53.025L51.345,38.443     c-1.371-1.212-3.427-1.124-4.59,0.192l-0.843,0.955c-1.165,1.316-0.997,3.367,0.374,4.578l16.507,14.582     c1.371,1.211,3.426,1.124,4.59-0.193l0.843-0.953C69.39,56.286,69.223,54.236,67.851,53.025z"/>
+		</g>
+	</g>
+	<g id="Rounded_Rectangle_4">
+		<g>
+			<path fill-rule="evenodd" clip-rule="evenodd" fill="#000000" d="M44.916,61.686c-2.029-0.133-3.798,1.626-3.948,3.928     l-0.926,14.126c-0.15,2.302,1.373,4.275,3.403,4.408c2.03,0.134,3.798-1.625,3.948-3.927l0.927-14.126     C48.47,63.794,46.946,61.819,44.916,61.686z"/>
+		</g>
+	</g>
+	<g id="Rounded_Rectangle_4_copy_2">
+		<g>
+			<path fill-rule="evenodd" clip-rule="evenodd" fill="#000000" d="M61.131,70.581l-10.843-9.1     c-1.768-1.483-4.261-1.422-5.568,0.136c-1.309,1.559-0.936,4.024,0.831,5.507l10.843,9.101c1.768,1.482,4.26,1.422,5.568-0.136     C63.27,74.53,62.897,72.064,61.131,70.581z"/>
+		</g>
+	</g>
+	<g id="Rounded_Rectangle_4_copy">
+		<g>
+			<path fill-rule="evenodd" clip-rule="evenodd" fill="#000000" d="M46.382,78.501c-1.148-1.68-3.751-1.897-5.813-0.486     l-12.654,8.658c-2.062,1.411-2.802,3.915-1.654,5.594c1.149,1.68,3.751,1.897,5.813,0.486l12.654-8.658     C46.791,82.684,47.53,80.18,46.382,78.501z"/>
+		</g>
+	</g>
+	<g id="Rounded_Rectangle_4_copy_3">
+		<g>
+			<path fill-rule="evenodd" clip-rule="evenodd" fill="#000000" d="M66.501,88.584l-3.612-14.9     c-0.589-2.429-2.668-4.009-4.646-3.529c-1.978,0.48-3.103,2.837-2.514,5.265l3.612,14.9c0.589,2.43,2.669,4.009,4.646,3.529     C65.965,93.369,67.09,91.012,66.501,88.584z"/>
+		</g>
+	</g>
+</g>
+</svg>

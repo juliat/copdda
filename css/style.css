@@ -126,8 +126,8 @@ p, ul, ol {
 }
 
 .video{
-  position: relative; 
-  padding-bottom: 35.25%;   
+  position: relative;
+  padding-bottom: 35.25%;
   padding-top: 30px; height: 0; overflow: hidden;
   max-width: 60%;
 }
@@ -346,10 +346,10 @@ table.comparison td {
   background-size: 10%;
 }
 table.comparison td.goOffOxygen {
-  background-image: url("../img/icons/oxygenTank/icon_34291.png");
+  background-image: url("../img/icons/walking/walking.png");
 }
 table.comparison td.moreControl {
-  background-image: url("../img/icons/dice/icon_14730.png");
+  background-image: url("../img/icons/gears/gears.png");
 }
 table.comparison td.lessExpensive {
   background-image: url("../img/icons/wallet/icon_22910.png");
@@ -359,6 +359,15 @@ table.comparison td.medicinesBetter {
 }
 table.comparison td.easierForCaregivers {
   background-image: url("../img/icons/heartHome/icon_34196.png");
+}
+table.comparison td.keepUpFamily {
+  background-image: url("../img/icons/kidOnShoulders/kidOnShoulders.png");
+}
+table.comparison td.moreIndependent {
+  background-image: url("../img/icons/driving/driving.png");
+}
+table.comparison td.moreMobile {
+  background-image: url("../img/icons/keepUp/keepup.png");
 }
 figure {
   padding: 0;
@@ -430,11 +439,11 @@ figure img {
 .floor::-webkit-scrollbar {
     width: 24px;
 }
- 
+
 .floor::-webkit-scrollbar-track {
     background: #e2e0c8;
 }
- 
+
 .floor::-webkit-scrollbar-thumb {
     background: #b5b3a0;
 }
