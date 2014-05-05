@@ -11,6 +11,7 @@ $(window).load(function(){
     });
   };
 
+function setupPages() {
   addFooter();
   loadVideoInstructions();
 

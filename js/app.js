@@ -8,24 +8,24 @@ $(document).ready(function() {
      //Intro
      'intro',
      'whoIsThisFor',
-     'whatDoesCOPDStandFor',
+     'whaIsCOPD',
 
      //Medical Treatment
      'medicalTreatmentTitle',
      'medicalTreatmentProConTable',
-     'medicalTreatmentBenefitsPlaylist',
-     'medicalTreatmentBenefitsChances',
-     'medicalTreatmentRisksPlaylist',
-     'medicalTreatmentRisksChances',
+     'medicalTreatmentAdvantagesPlaylist',
+     'medicalTreatmentAdvantagesChances',
+     'medicalTreatmentDisadvantagesPlaylist',
+     'medicalTreatmentDisadvantagesChances',
      'medicalTreatmentSummaryTable',
 
      //Lung Transplant
      'lungTransplantTitle',
      'lungTransplantProConTable',
-     'lungTransplantBenefitsPlaylist',
-     'lungTransplantBenefitsChances',
-     'lungTransplantRisksPlaylist',
-     'lungTransplantRisksChances',
+     'lungTransplantAdvantagesPlaylist',
+     'lungTransplantAdvantagesChances',
+     'lungTransplantDisadvantagesPlaylist',
+     'lungTransplantDisadvantagesChances',
      'lungTransplantSummaryTable',
 
      //Values Quiz
@@ -65,7 +65,7 @@ $(document).ready(function() {
       event.preventDefault();
       //move down 100px
       $('.floor').stop().animate({ scrollTop: scrollPosition });
-      
+
       scrollPosition += 100;
 
     } else if (event.keyCode == 38) {
