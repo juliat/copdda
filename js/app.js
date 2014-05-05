@@ -9,6 +9,7 @@ $(document).ready(function() {
      'intro',
      'whoIsThisFor',
      'whaIsCOPD',
+     'noSurvivalBenefit',
 
      //Medical Treatment
      'medicalTreatmentTitle',
