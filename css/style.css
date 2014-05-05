@@ -10,6 +10,19 @@
   overflow-x: hidden;
   overflow-y: visible;
 }
+
+.chance img{
+  display: inline-block;
+  float: left;
+  width: 20%;
+  margin-right: 20px;
+}
+
+.chance .chances{
+  float: left;
+  width: 66%;
+}
+
 .chances_graph p {
   display: inline;
 }
@@ -98,21 +111,25 @@ a:hover {
 .backToMain:before {
   content: "←";
 }
+
 .floor {
-  padding: 2.5% 20% 7.5% 20%;
+  padding: 2.5% 5% 7.5% 5%;
   background-color: #FCF9DF;
 }
+
 h1, h2, h3 {
-  max-width: 70%;
+  max-width: 60%;
 }
 p, ul, ol {
   width: 100%;
+  max-width: 60%;
 }
 
 .video{
   position: relative; 
-  padding-bottom: 56.25%;   
+  padding-bottom: 35.25%;   
   padding-top: 30px; height: 0; overflow: hidden;
+  max-width: 60%;
 }
 .video iframe {
   position: absolute;
@@ -125,6 +142,7 @@ p, ul, ol {
 
 audio{
   width: 100%;
+  max-width: 60%;
 }
 
 .footer {
@@ -136,10 +154,11 @@ audio{
   padding: 8px;
 }
 
-.progress{
+ul.progress{
   text-align: center;
   margin-top: 0;
   margin-bottom: 0;
+  max-width: none;
 }
 
 .progress li {
@@ -364,7 +383,7 @@ figure img {
 .fontSizeAdjuster{
   position: fixed;
   top: 32px;
-  left: 10%;
+  right: 20%;
   height: 32px;
   width: 64px;
   text-align: center;
@@ -408,19 +427,19 @@ figure img {
   background: #eee;
 }
 
-::-webkit-scrollbar {
+.floor::-webkit-scrollbar {
     width: 24px;
 }
  
-::-webkit-scrollbar-track {
+.floor::-webkit-scrollbar-track {
     background: #e2e0c8;
 }
  
-::-webkit-scrollbar-thumb {
+.floor::-webkit-scrollbar-thumb {
     background: #b5b3a0;
 }
 
-::-webkit-scrollbar-thumb:hover {
+.floor::-webkit-scrollbar-thumb:hover {
     background: #cbc9b4;
 }
 

@@ -5,70 +5,30 @@ $(document).ready(function() {
      height: '96%',
      jump: true,
      ascensorFloorName: [
+     //Intro
      'intro',
      'whoIsThisFor',
      'whatDoesCOPDStandFor',
-     'whatIsChronicBronchitis',
-     'whatIsEmphysema',
-     'howTreatmentsWork',
-     'treatmentsCOPDMedicines',
-     'treatmentsExerciseForCOPD',
-     'treatmentsSurgeriesForCOPD',
-     'treatmentsWhyAChoice',
-     'treatmentsNoSurvivalBenefit',
-     'treatmentsSurvivalNumbers',
 
-     'benefitsComparison1',
-     'medicalBenefitControl',
-     'medicalBenefitExpense',
-     'medicalBenefitDrugs',
-     'medicalBenefitCaregiver',
+     //Medical Treatment
+     'medicalTreatmentTitle',
+     'medicalTreatmentProConTable',
+     'medicalTreatmentBenefitsPlaylist',
+     'medicalTreatmentBenefitsChances',
+     'medicalTreatmentRisksPlaylist',
+     'medicalTreatmentRisksChances',
+     'medicalTreatmentSummaryTable',
 
-     'benefitsComparison2',
-     'transplantBenefitGoingOffOxygen',
-     'transplantBenefitGoingOffOxygenChances',
-     'transplantBenefitMobility',
-     'transplantBenefitMobilityChances',
-     'transplantBenefitIndependence',
-     'transplantBenefitIndependenceChances',
-     'transplantBenefitFamily',
-     'transplantBenefitFamilyChances',
-     'benefitsComparison3',
+     //Lung Transplant
+     'lungTransplantTitle',
+     'lungTransplantProConTable',
+     'lungTransplantBenefitsPlaylist',
+     'lungTransplantBenefitsChances',
+     'lungTransplantRisksPlaylist',
+     'lungTransplantRisksChances',
+     'lungTransplantSummaryTable',
 
-     'risksIntro',
-     'risksComparison1',
-     'medicalRiskInconsistent',
-     'medicalRiskShortOfBreath',
-     'medicalRiskStillNeedOxygen',
-     'medicalRiskFrequentMedicineUse',
-     'medicalRiskLimitedIndependence',
-
-     'risksComparison2',
-     'transplantRiskNotGetNewLungs',
-     'transplantRiskToxicDrugs',
-     'transplantRiskToxicDrugsChances',
-     'transplantRiskStress',
-     'transplantRiskStressChances',
-     'transplantRiskComplications',
-     'transplantRiskComplicationsRejection',
-     'transplantRiskComplicationsRejectionChances',
-     'transplantRiskComplicationsVentilator',
-     'transplantRiskComplicationsVentilatorChances',
-     'transplantRiskComplicationsKidneyDamage',
-     'transplantRiskComplicationsKidneyDamageChances',
-     'transplantRiskComplicationsFeedingTube',
-     'transplantRiskComplicationsFeedingTubeChances',
-     'transplantRiskComplicationsLongHospitalStay',
-     'transplantRiskComplicationsLongHospitalStayChances',
-     'transplantRiskComplicationsChances',
-     'transplantRiskFollowup',
-     'transplantRiskFollowupChances',
-     'transplantRiskLifeChanges',
-     'transplantRiskLifeChangesChances',
-     'transplantRiskExpense',
-     'transplantRiskExpenseChances',
-     'risksComparison3',
-
+     //Values Quiz
      'valuesIntro',
      'valuesQuestion1',
      'valuesQuestion2',
@@ -95,26 +55,32 @@ $(document).ready(function() {
     /* $("#floor-"+floor.to).click(); */
   });
 
-  var n = 0;
+  //initialize page scrolltop
+  var scrollPosition = 0;
 
   $(document).keydown(function(event){
 
     if (event.keyCode == 40) {
-
+      //down
       event.preventDefault();
-
-      $('.floor').stop().animate({ scrollTop: n });
-      n += 100;
+      //move down 100px
+      $('.floor').stop().animate({ scrollTop: scrollPosition });
+      
+      scrollPosition += 100;
 
     } else if (event.keyCode == 38) {
-
+      //up
       event.preventDefault();
-
-      $('.floor').stop().animate({ scrollTop: n });
-      n -= 100;
+      //move up 100px
+      $('.floor').stop().animate({ scrollTop: scrollPosition });
+      scrollPosition -= 100;
 
     } else if (event.keycode == 39 || event.keycode == 37){
+      //left or right
+
+      //scroll back to the top
       $('.floor').scrollTop(0);
+
     }
   });
 });
