@@ -48,6 +48,9 @@
 #hallucinations g:nth-child(-n+74){
   fill: red;
 }
+#ventilator g:nth-child(-n+10){
+  fill: red;
+}
 #rejection_viz g:nth-child(-n+30){
   fill: red;
 }
