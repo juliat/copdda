@@ -9,16 +9,12 @@ $(document).ready(function() {
      'intro',
      'whoIsThisFor',
      'whatDoesCOPDStandFor',
-     'whatIsChronicBronchitis',
-     'whatIsEmphysema',
 
      //Medical Treatment
      'medicalTreatmentTitle',
      'medicalTreatmentProConTable',
-     'medicalTreatmentBenefitsList',
      'medicalTreatmentBenefitsPlaylist',
      'medicalTreatmentBenefitsChances',
-     'medicalTreatmentRisksList',
      'medicalTreatmentRisksPlaylist',
      'medicalTreatmentRisksChances',
      'medicalTreatmentSummaryTable',
@@ -26,10 +22,8 @@ $(document).ready(function() {
      //Lung Transplant
      'lungTransplantTitle',
      'lungTransplantProConTable',
-     'lungTransplantBenefitsList',
      'lungTransplantBenefitsPlaylist',
      'lungTransplantBenefitsChances',
-     'lungTransplantRisksList',
      'lungTransplantRisksPlaylist',
      'lungTransplantRisksChances',
      'lungTransplantSummaryTable',
