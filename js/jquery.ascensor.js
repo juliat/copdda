@@ -395,8 +395,7 @@ author: Léo Galley <contact@kirkas.ch>
 
       this.nodeChildren.css({
         'position': 'absolute',
-        'overflowY': 'scroll',
-        'overflowX': 'hidden',
+        'overflow': 'scroll',
         'top': '0',
         'left': '0',
         'width': '100%',
