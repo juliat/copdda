@@ -39,6 +39,15 @@
 #off_o2_viz g:nth-child(-n+90){
   fill: green;
 }
+#stressfulTX g:nth-child(-n+97){
+  fill: red;
+}
+#no_lungs g:nth-child(-n+28){
+  fill: red;
+}
+#hallucinations g:nth-child(-n+74){
+  fill: red;
+}
 #rejection_viz g:nth-child(-n+30){
   fill: red;
 }
