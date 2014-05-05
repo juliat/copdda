@@ -23,6 +23,7 @@ function setupPages() {
   $(".next").on('click',function() {
     ascensorInstance.next();
   });
+}
 
 });
 
