@@ -36,7 +36,20 @@
     margin: 0 -1.25em 1.35em -2.15em;
     padding: 0;
 }
+/*Lung Transplant Chances */
 #off_o2_viz g:nth-child(-n+90){
+  fill: green;
+}
+#around_more g:nth-child(-n+92){
+  fill: green;
+}
+#independent_drive g:nth-child(-n+83){
+  fill: green;
+}
+#keep_up g:nth-child(-n+86){
+  fill: green;
+}
+#travel g:nth-child(-n+67){
   fill: green;
 }
 #stressfulTX g:nth-child(-n+97){
@@ -64,6 +77,28 @@
   fill: red;
 }
 #yr5_kidney_damage_viz g:nth-child(-n+55){
+  fill: red;
+}
+/*Medical Treatment Chances */
+#control g:nth-child(-n+23){
+  fill: green;
+}
+#easy_on_caregivers g:nth-child(-n+94){
+  fill: green;
+}
+#short_of_breath g:nth-child(-n+78){
+  fill: red;
+}
+#need_o2 g:nth-child(-n+74){
+  fill: red;
+}
+#not_fot_everyone g:nth-child(-n+63){
+  fill: red;
+}
+#other_med g:nth-child(-n+82){
+  fill: red;
+}
+#lim_indep g:nth-child(-n+80){
   fill: red;
 }
 
