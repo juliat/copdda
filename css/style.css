@@ -10,7 +10,12 @@
   overflow-x: hidden;
   overflow-y: visible;
 }
-
+.wrapper.toc {
+    background: #fefefe;
+}
+.toc .intro {
+    background: #FCFCFC;
+}
 .chance img{
   display: inline-block;
   float: left;
@@ -164,15 +169,19 @@ a:hover {
 .backToMain:before {
   content: "←";
 }
-
+.wrapper {
+ padding: 2.5% 5% 7.5% 5%;
+}
+.wrapper.nopadding {
+  padding:0;
+}
 .floor {
-  padding: 2.5% 5% 7.5% 5%;
   background-color: #FCFCFC;
 }
-.floor-medical {
+.medical {
   background-color: #eaf9fc;
 }
-.floor-transplant {
+.transplant {
   background-color: #FFF5EC;
 }
 
@@ -280,18 +289,6 @@ div.pageFooter {
 .pageFooter a.next {
     text-align: right;
     border-left: 1px solid #aaa;
-}
-
-/* two column layout */
-.medical, .transplant {
-    width: 49%;
-    display: inline-block;
-    overflow: hidden;
-}
-.medical {
-   padding-right: 5%;
-   float: left;
-   overflow: visible;
 }
 .transplant {
    padding-left: 5%;
@@ -479,6 +476,25 @@ table.comparison td {
 .expensive {
   background-image: url("../img/icons/cash/cash.png");
 }
+ol.toc {
+    list-style-position: outside;
+    padding: 0;
+    max-width: none;
+    margin: 0;
+    font-size: 0.88em;
+    width: 100%;
+    /* display: table-row; */
+}
+.toc div {
+    padding: 2em 5% 1em 5%;
+    width: 100%;
+    margin: 0;
+}
+.toc h1 {
+    padding: 2em 5% 0.5em 5%;
+    max-width: none;
+    margin-bottom: 0;
+}
 h3.icon {
   background-size: contain;
   background-repeat: no-repeat;
@@ -567,7 +583,12 @@ figure img {
 .floor::-webkit-scrollbar-thumb:hover {
     background: #cbc9b4;
 }
-
+@media screen and (min-width: 1024px) {
+  .toc div {
+    /* width: 100%; */
+    /* display: table-cell; */
+  }
+}
 @media screen and (max-width : 1024px) {
   body {
     font-size: 1.5em;
