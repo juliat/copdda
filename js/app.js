@@ -1,5 +1,6 @@
 var ascensorInstance;
 $(document).ready(function() {
+
   var ascensor = $('#pagesWrapper').ascensor(
     {direction: 'x',
      height: '96%',
@@ -8,8 +9,10 @@ $(document).ready(function() {
      //Intro
      'intro',
      'whoIsThisFor',
-     'whaIsCOPD',
+     'whatIsCOPD',
+     "whatTreatmentsDo",
      'noSurvivalBenefit',
+     'twoOptions',
 
      //Medical Treatment
      'medicalTreatmentTitle',

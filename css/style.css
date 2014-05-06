@@ -170,7 +170,7 @@ a:hover {
   background-color: #FCFCFC;
 }
 .floor-medical {
-  background-color: #F9FEFF;
+  background-color: #eaf9fc;
 }
 .floor-transplant {
   background-color: #FFF5EC;
@@ -180,8 +180,18 @@ h1, h2, h3 {
   max-width: 60%;
 }
 p, ul, ol {
-  width: 100%;
   max-width: 60%;
+}
+
+.half{
+  width: 50%;
+  float: left;
+  padding: 5%;
+}
+
+.half p, .half h1{
+  width: 100%;
+  max-width: none;
 }
 
 .video{
@@ -567,12 +577,23 @@ figure img {
   }
 
   .fontSizeAdjuster{
-    left: 1%;
+    right: 5%;
   }
 
   .progress li {
     width: 10px;
     height: 10px;
+  }
+
+  h1, h2, h3 {
+    max-width: 90%;
+  }
+  p, ul, ol, .video, audio {
+    max-width: 90%;
+  }
+
+  .video{
+    padding-bottom: 46%;
   }
 }
 @media screen and (max-width : 768px) {
