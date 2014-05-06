@@ -51,37 +51,52 @@ $(document).ready(function() {
   ascensor.on("scrollStart", function(event, floor){
     $(".progress li").removeClass("selected");
     $(".progress li:eq("+floor.to+")").addClass("selected");
-
-    /* tried simulating click on floor transition with no success */
-    /* $("#floor-"+floor.to).click(); */
   });
 
   //initialize page scrolltop
   var scrollPosition = 0;
 
+  function checkDocLowerBounds() {
+    return ($(window).scrollTop() + $(window).height() > $(document).height());
+  }
+
   $(document).keydown(function(event){
 
-    if (event.keyCode == 40) {
-      //down
+    var scrollingFloor = $('.floor');
+
+    if ((event.keyCode === 40) || (event.keyCode === 38)) {
+
       event.preventDefault();
-      //move down 100px
-      $('.floor').stop().animate({ scrollTop: scrollPosition });
 
-      scrollPosition += 100;
+      console.log("scrollTop before: "+ ($('.floor').scrollTop())) ;
+      console.log("scrollPosition before: "+scrollPosition);
 
-    } else if (event.keyCode == 38) {
-      //up
-      event.preventDefault();
-      //move up 100px
-      $('.floor').stop().animate({ scrollTop: scrollPosition });
-      scrollPosition -= 100;
+      var outOfBounds = checkDocLowerBounds();
+      // up
+      if ((event.keyCode === 38) && (scrollPosition > 0)) {
+        scrollPosition -= 50;
+      }
+      // down
+      else if ((event.keyCode === 40) && !(outOfBounds)) {
+        scrollPosition += 50;
+      }
 
-    } else if (event.keycode == 39 || event.keycode == 37){
+      // animate scrolling to new position
+      console.log($('.floor').attr('id'));
+      scrollingFloor.scrollTop(scrollPosition);
+      /*
+      animate just beraks stuff...
+      scrollingFloor.stop().animate({scrollTop: scrollPosition+"px"}, 500, function() {
+        console.log("callback");
+      }); */
+
+      console.log("scrollPosition after: " + scrollPosition);
+      console.log("scrollTop after: "+ (scrollingFloor.scrollTop())) ;
+
+    } else if (event.keycode === 39 || event.keycode === 37){
       //left or right
-
       //scroll back to the top
-      $('.floor').scrollTop(0);
-
+      scrollingFloor.scrollTop(0);
     }
   });
 });
