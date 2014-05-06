@@ -8,6 +8,7 @@ $(document).ready(function() {
      ascensorFloorName: [
      //Intro
      'intro',
+     'TOC',
      'whoIsThisFor',
      'whatIsCOPD',
      "whatTreatmentsDo",
