@@ -68,7 +68,7 @@ $(document).ready(function() {
 
       event.preventDefault();
       //down
-      if (event.keyCode == 40) {
+      if ((event.keyCode == 40) && (scrollPosition >0)) {
         //move down 100px
         scrollPosition += 100;
       }
