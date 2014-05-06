@@ -170,7 +170,7 @@ a:hover {
   background-color: #FCFCFC;
 }
 .floor-medical {
-  background-color: #F9FEFF;
+  background-color: #eaf9fc;
 }
 .floor-transplant {
   background-color: #FFF5EC;
@@ -181,6 +181,17 @@ h1, h2, h3 {
 }
 p, ul, ol {
   max-width: 60%;
+}
+
+.half{
+  width: 50%;
+  float: left;
+  padding: 5%;
+}
+
+.half p, .half h1{
+  width: 100%;
+  max-width: none;
 }
 
 .video{
