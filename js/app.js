@@ -64,20 +64,20 @@ $(document).ready(function() {
 
   $(document).keydown(function(event){
 
-    if (event.keyCode == 40) {
+    if ((event.keyCode == 40) || (event.keyCode == 38)) {
+
+      event.preventDefault();
       //down
-      event.preventDefault();
-      //move down 100px
+      if (event.keyCode == 40) {
+        //move down 100px
+        scrollPosition += 100;
+      }
+      else {
+        //up
+        //move up 100px
+        scrollPosition -= 100;
+      }
       $('.floor').stop().animate({ scrollTop: scrollPosition });
-
-      scrollPosition += 100;
-
-    } else if (event.keyCode == 38) {
-      //up
-      event.preventDefault();
-      //move up 100px
-      $('.floor').stop().animate({ scrollTop: scrollPosition });
-      scrollPosition -= 100;
 
     } else if (event.keycode == 39 || event.keycode == 37){
       //left or right

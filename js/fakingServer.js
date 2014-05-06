@@ -24,13 +24,14 @@ $(document).ready(function(){
     initFontSize();
 
     $(".fontBigger").click(function(){
-        $("body p, body ol, body ul, body li").css("font-size", fontSize + "em");
         fontSize += 0.1;
+        $("body").css("font-size", fontSize + "em");
     });
 
     $(".fontSmaller").click(function(){
-        $("body p, body ol, body ul, body li").css("font-size", fontSize + "em");
         fontSize -= 0.1;
+        $("body").css("font-size", fontSize + "em");
     });
+
 
 });
