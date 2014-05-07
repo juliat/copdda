@@ -11,34 +11,65 @@
   overflow-y: visible;
 }
 
-.chance img{
-  display: inline-block;
+.chance{
+  margin-top: 5em;
+}
+
+.chance .img{
+  width: 25.5%;
   float: left;
-  width: 20%;
-  margin-right: 20px;
+}
+
+.wrapper.toc {
+    background: #fefefe;
+}
+
+.toc .intro {
+    background: #FCFCFC;
+}
+.chance img{
+  /* display: inline-block; */
+  /* float: left; */
+  /* margin-right: 5%; */
+  width: 100%;
 }
 
 .chance .chances{
   float: left;
-  width: 66%;
+  width: 22%;
+  padding-top: 2.75em;
+}
+ {
+  /* margin: 0; */
+}
+.chance .multipleChances .peopleviz {
+  width: 100%;
 }
 
-.chances_graph p {
-  display: inline;
+.chance p{
+  max-width: none;
+  width: 100%;
+  float: left;
 }
-.chances_graph {
-  float:left;
+
+ {
+  /* display: inline; */
+}
+.chances_graph p {
+  text-align: center;
+  margin: -1.25em 3em 3em 0;
+  font-style: italic;
 }
 .peopleviz svg {
-    height: 245px;
+    height: 10.5em;
     float: left;
-    width: 200px;
-    margin: 0 -1.25em 1.35em -2.15em;
+    width: 100%;
+    margin: -1em -2.25em 1.35em 0;
     padding: 0;
 }
 /*Lung Transplant Chances */
 #off_o2_viz g:nth-child(-n+90){
-  fill: green;
+  fill: #059C1D;
 }
 #around_more g:nth-child(-n+92){
   fill: green;
@@ -53,7 +84,7 @@
   fill: green;
 }
 #stressfulTX g:nth-child(-n+97){
-  fill: red;
+  fill: #DB2323;
 }
 #no_lungs g:nth-child(-n+28){
   fill: red;
@@ -164,21 +195,57 @@ a:hover {
 .backToMain:before {
   content: "←";
 }
-
+.wrapper {
+ padding: 2.5% 5% 7.5% 5%;
+}
+.wrapper.nopadding {
+  padding:0;
+}
 .floor {
-  padding: 2.5% 5% 7.5% 5%;
   background-color: #FCFCFC;
 }
-.floor-medical {
+.medical {
   background-color: #eaf9fc;
 }
-.floor-transplant {
+.transplant {
   background-color: #FFF5EC;
 }
-
-h1, h2, h3 {
-  max-width: 60%;
+.medical h1, .transplant h1 {
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-left: 1.66em;
+  padding-top: 0.2em;
 }
+.medical h1 {
+  background-image: url("../img/icons/enhancing_medical/enhancing_medical.png");
+}
+.transplant h1 {
+  background-image: url("../img/icons/surgery/surgery.png");
+}
+.wrapper{
+  padding: 2.5% 5% 7.5% 5%;
+}
+
+.wrapper.nopadding{
+  padding: 0;
+}
+
+.wrapper.title h1{
+  max-width: none;
+  text-align: center;
+  background-image: none;
+}
+
+.wrapper.title svg{
+  width: 100%;
+  height: 10em;
+  margin: 4em auto 2em auto;
+}
+
+.wrapper.twoOptions h2{
+  max-width: none;
+}
+
 p, ul, ol {
   max-width: 60%;
 }
@@ -187,11 +254,19 @@ p, ul, ol {
   width: 50%;
   float: left;
   padding: 5%;
+  height: 100%;
+  min-height: 720px;
 }
 
 .half p, .half h1{
   width: 100%;
   max-width: none;
+}
+
+.half svg {
+    width: 100%;
+    height: 10em;
+    margin-bottom:  2em;
 }
 
 .video{
@@ -287,21 +362,6 @@ div.pageFooter {
 .pageFooter a.next {
     text-align: right;
     border-left: 1px solid #aaa;
-}
-
-/* two column layout */
-.medical, .transplant {
-    width: 49%;
-    display: inline-block;
-    overflow: hidden;
-}
-.medical {
-   padding-right: 5%;
-   float: left;
-   overflow: visible;
-}
-.transplant {
-   padding-left: 5%;
 }
 
 .video p {
@@ -405,6 +465,7 @@ table td, table th {
 table.comparison td,
 table.comparison th {
   width: 50%;
+  /* background-position-y: 18%; */
 }
 table th {
   border-top: 1px solid #ccc;
@@ -419,24 +480,40 @@ table.comparison.transplant-highlight th:first-child {
 table.comparison td {
   background-repeat: no-repeat;
   background-position-x: 3%;
-  background-position-y: 40%;
+  background-position-y: 30%;
   padding-left: 8%;
   background-size: 10%;
 }
+
 .goOffOxygen {
   background-image: url("../img/icons/walking/walking.png");
 }
 .moreControl {
   background-image: url("../img/icons/gears/gears.png");
 }
+table td.moreControl {
+  background-position-y: 18%;
+}
 .lessExpensive {
   background-image: url("../img/icons/coins/coins.png");
+}
+table td.lessExpensive{
+  background-position: 4% 40%;
+  background-size: 9%;
 }
 .medicinesBetter {
   background-image: url("../img/icons/medicine1/icon_7401.png");
 }
+table td.medicinesBetter {
+  background-size: 12%;
+}
 .easierForCaregivers {
   background-image: url("../img/icons/heartHome/icon_34196.png");
+}
+table td.easierForCaregivers {
+  background-position-x: 4%;
+  background-position-y: 40%;
+  background-size: 9%;
 }
 .keepUpFamily {
   background-image: url("../img/icons/kidOnShoulders/kidOnShoulders.png");
@@ -450,17 +527,36 @@ table.comparison td {
 .MTmightNotWork {
   background-image: url("../img/icons/ambulance/ambulance.png");
 }
+table td.MTmightNotWork{
+  background-position-y: 14%;
+}
 .needOxygen {
   background-image: url("../img/icons/oxygenTank/oxygenTank.png");
+}
+table td.needOxygen {
+  background-size: 9%;
+  background-position: 4%;
 }
 .shortOfBreath {
   background-image: url("../img/icons/cough.png");
 }
+table td.shortOfBreath {
+  background-size: 8%;
+  background-position-x: 5%;
+  background-position-y: 45%;
+}
 .needInhalers {
   background-image: url("../img/icons/inhaler-icon.png");
 }
+table td.needInhalers {
+  background-position: 3% 40%;
+}
 .independenceLimited {
   background-image: url("../img/icons/wheelchair/wheelchair.png");
+}
+table td.independenceLimited {
+  background-size: 9.5%;
+  background-position: 3.5% 40%;
 }
 .travel {
   background-image: url("../img/icons/airplane/airplane.png");
@@ -486,21 +582,44 @@ table.comparison td {
 .expensive {
   background-image: url("../img/icons/cash/cash.png");
 }
+ol.toc {
+    list-style-position: outside;
+    padding: 0;
+    max-width: none;
+    margin: 0;
+    font-size: 0.88em;
+    width: 100%;
+    /* display: table-row; */
+}
+.toc div {
+    padding: 2em 5% 1em 5%;
+    width: 100%;
+    margin: 0;
+}
+.toc h1 {
+    padding: 2em 5% 0.5em 5%;
+    max-width: none;
+    margin-bottom: 0;
+}
 h3.icon {
   background-size: contain;
   background-repeat: no-repeat;
   padding-top: 0.8em;
-  padding-left: 2.66em;
+  padding-left: 2.2em;
 }
-figure {
-  padding: 0;
-  margin: 0;
-  float: right;
-  width: 40%;
-  margin-left: 5%;
+div.explanation {
+    float: left;
+    width: 44%;
+    margin-left: 0%;
+    padding-top: 1.6em;
 }
-figure img {
-  max-width: 100%;
+.explanation p:first-child {
+    margin: 0;
+}
+.img h3 {
+    max-width: none;
+    margin-top: 0;
+    font-size: 1.125em;
 }
 
 .keepScrolling{
@@ -515,7 +634,7 @@ figure img {
 .fontSizeAdjuster{
   position: fixed;
   top: 32px;
-  right: 20%;
+  right: 5%;
   height: 32px;
   width: 64px;
   text-align: center;
@@ -564,17 +683,22 @@ figure img {
 }
 
 .floor::-webkit-scrollbar-track {
-    background: #e2e0c8;
+    background: #ddd;
 }
 
 .floor::-webkit-scrollbar-thumb {
-    background: #b5b3a0;
+    background: #bbb;
 }
 
 .floor::-webkit-scrollbar-thumb:hover {
-    background: #cbc9b4;
+    background: #ccc;
 }
-
+@media screen and (min-width: 1024px) {
+  .toc div {
+    /* width: 100%; */
+    /* display: table-cell; */
+  }
+}
 @media screen and (max-width : 1024px) {
   body {
     font-size: 1.5em;
@@ -590,10 +714,6 @@ figure img {
   .progress li {
     width: 10px;
     height: 10px;
-  }
-
-  h1, h2, h3 {
-    max-width: 90%;
   }
   p, ul, ol, .video, audio {
     max-width: 90%;
