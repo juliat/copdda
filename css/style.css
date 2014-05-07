@@ -12,11 +12,12 @@
 }
 
 .chance{
-  max-width: 60%;
+  margin-top: 5em;
 }
 
-.chance .text{
-  width: 47.5%;
+.chance .img{
+  width: 25.5%;
+  float: left;
 }
 
 .wrapper.toc {
@@ -27,14 +28,22 @@
     background: #FCFCFC;
 }
 .chance img{
-  display: inline-block;
-  float: left;
-  margin-right: 5%;
+  /* display: inline-block; */
+  /* float: left; */
+  /* margin-right: 5%; */
+  width: 100%;
 }
 
 .chance .chances{
   float: left;
-  width: 47.5%;
+  width: 22%;
+  padding-top: 2.75em;
+}
+ {
+  /* margin: 0; */
+}
+.chance .multipleChances .peopleviz {
+  width: 100%;
 }
 
 .chance p{
@@ -43,17 +52,17 @@
   float: left;
 }
 
-.chances_graph p {
-  display: inline;
+ {
+  /* display: inline; */
 }
-.chances_graph {
-  float:left;
+.chances_graph p {
+  /* float:left; */
 }
 .peopleviz svg {
-    height: 245px;
+    height: 10.5em;
     float: left;
     width: 100%;
-    margin: 0 -1.25em 1.35em -2.15em;
+    margin: -1em -2.25em 1.35em 0;
     padding: 0;
 }
 /*Lung Transplant Chances */
@@ -199,7 +208,18 @@ a:hover {
 .transplant {
   background-color: #FFF5EC;
 }
-
+.medical h1, .transplant h1 {
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-left: 1.66em;
+  padding-top: 0.2em;
+}
+.medical h1 {
+  background-image: url("../img/icons/enhancing_medical/enhancing_medical.png");
+}
+.transplant h1 {
+  background-image: url("../img/icons/surgery/surgery.png");
+}
 .wrapper{
   padding: 2.5% 5% 7.5% 5%;
 }
@@ -207,7 +227,6 @@ a:hover {
 .wrapper.nopadding{
   padding: 0;
 }
-
 
 .wrapper.title h1{
   max-width: none;
@@ -224,9 +243,6 @@ a:hover {
   max-width: none;
 }
 
-h1, h2, h3 {
-  max-width: 60%;
-}
 p, ul, ol {
   max-width: 60%;
 }
@@ -457,6 +473,7 @@ table.comparison td {
   padding-left: 8%;
   background-size: 10%;
 }
+
 .goOffOxygen {
   background-image: url("../img/icons/walking/walking.png");
 }
@@ -543,17 +560,21 @@ h3.icon {
   background-size: contain;
   background-repeat: no-repeat;
   padding-top: 0.8em;
-  padding-left: 2.66em;
+  padding-left: 2.2em;
 }
-figure {
-  padding: 0;
-  margin: 0;
-  float: right;
-  width: 40%;
-  margin-left: 5%;
+div.explanation {
+    float: left;
+    width: 44%;
+    margin-left: 0%;
+    padding-top: 1.6em;
 }
-figure img {
-  max-width: 100%;
+.explanation p:first-child {
+    margin: 0;
+}
+.img h3 {
+    max-width: none;
+    margin-top: 0;
+    font-size: 1.125em;
 }
 
 .keepScrolling{
@@ -568,7 +589,7 @@ figure img {
 .fontSizeAdjuster{
   position: fixed;
   top: 32px;
-  right: 20%;
+  right: 5%;
   height: 32px;
   width: 64px;
   text-align: center;
@@ -648,10 +669,6 @@ figure img {
   .progress li {
     width: 10px;
     height: 10px;
-  }
-
-  h1, h2, h3 {
-    max-width: 90%;
   }
   p, ul, ol, .video, audio {
     max-width: 90%;
