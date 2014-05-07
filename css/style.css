@@ -69,7 +69,7 @@
 }
 /*Lung Transplant Chances */
 #off_o2_viz g:nth-child(-n+90){
-  fill: green;
+  fill: #059C1D;
 }
 #around_more g:nth-child(-n+92){
   fill: green;
@@ -84,7 +84,7 @@
   fill: green;
 }
 #stressfulTX g:nth-child(-n+97){
-  fill: red;
+  fill: #DB2323;
 }
 #no_lungs g:nth-child(-n+28){
   fill: red;
@@ -233,6 +233,7 @@ a:hover {
 .wrapper.title h1{
   max-width: none;
   text-align: center;
+  background-image: none;
 }
 
 .wrapper.title svg{
@@ -457,6 +458,7 @@ table td, table th {
 table.comparison td,
 table.comparison th {
   width: 50%;
+  /* background-position-y: 18%; */
 }
 table th {
   border-top: 1px solid #ccc;
@@ -471,7 +473,7 @@ table.comparison.transplant-highlight th:first-child {
 table.comparison td {
   background-repeat: no-repeat;
   background-position-x: 3%;
-  background-position-y: 40%;
+  background-position-y: 30%;
   padding-left: 8%;
   background-size: 10%;
 }
@@ -482,14 +484,29 @@ table.comparison td {
 .moreControl {
   background-image: url("../img/icons/gears/gears.png");
 }
+table td.moreControl {
+  background-position-y: 18%;
+}
 .lessExpensive {
   background-image: url("../img/icons/coins/coins.png");
+}
+table td.lessExpensive{
+  background-position: 4% 40%;
+  background-size: 9%;
 }
 .medicinesBetter {
   background-image: url("../img/icons/medicine1/icon_7401.png");
 }
+table td.medicinesBetter {
+  background-size: 12%;
+}
 .easierForCaregivers {
   background-image: url("../img/icons/heartHome/icon_34196.png");
+}
+table td.easierForCaregivers {
+  background-position-x: 4%;
+  background-position-y: 40%;
+  background-size: 9%;
 }
 .keepUpFamily {
   background-image: url("../img/icons/kidOnShoulders/kidOnShoulders.png");
@@ -503,17 +520,36 @@ table.comparison td {
 .MTmightNotWork {
   background-image: url("../img/icons/ambulance/ambulance.png");
 }
+table td.MTmightNotWork{
+  background-position-y: 14%;
+}
 .needOxygen {
   background-image: url("../img/icons/oxygenTank/oxygenTank.png");
+}
+table td.needOxygen {
+  background-size: 9%;
+  background-position: 4%;
 }
 .shortOfBreath {
   background-image: url("../img/icons/cough.png");
 }
+table td.shortOfBreath {
+  background-size: 8%;
+  background-position-x: 5%;
+  background-position-y: 45%;
+}
 .needInhalers {
   background-image: url("../img/icons/inhaler-icon.png");
 }
+table td.needInhalers {
+  background-position: 3% 40%;
+}
 .independenceLimited {
   background-image: url("../img/icons/wheelchair/wheelchair.png");
+}
+table td.independenceLimited {
+  background-size: 9.5%;
+  background-position: 3.5% 40%;
 }
 .travel {
   background-image: url("../img/icons/airplane/airplane.png");
