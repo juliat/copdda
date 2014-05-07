@@ -56,7 +56,9 @@
   /* display: inline; */
 }
 .chances_graph p {
-  /* float:left; */
+  text-align: center;
+  margin: -1.25em 3em 3em 0;
+  font-style: italic;
 }
 .peopleviz svg {
     height: 10.5em;
