@@ -1,5 +1,5 @@
 var ascensorInstance;
-$(document).ready(function() {
+$(window).ready(function() {
 
   var ascensor = $('#pagesWrapper').ascensor(
     {direction: 'x',
@@ -84,5 +84,34 @@ $(document).ready(function() {
       $('.floor').scrollTop(0);
     }
   });
+
+  // bind footer links
+  $(".prev").on('click',function() {
+    ascensorInstance.prev();
+  });
+
+  $(".next").on('click',function() {
+    ascensorInstance.next();
+  });
+
+  // initial value
+  var fontSize = 1.375;
+
+  function initFontSize(){
+      $("body").css("font-size", fontSize + "em");
+  };
+
+  initFontSize();
+
+  $(".fontBigger").click(function(){
+      $("body").css("font-size", fontSize + "em");
+      fontSize += 0.1;
+  });
+
+  $(".fontSmaller").click(function(){
+      $("body").css("font-size", fontSize + "em");
+      fontSize -= 0.1;
+  });
+
 });
 
