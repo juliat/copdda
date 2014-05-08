@@ -382,46 +382,145 @@ div.pageFooter {
   -moz-border-radius:3px;
   -webkit-border-radius:3px;
   border-radius:3px;
+  text-shadow:0px 1px 0px #999;
 }
+
+.vq-response button:focus{
+  outline: 0;
+}
+
 .vq-response .vq5 {
   margin-right: 2%;
 }
 .vq1 {
-  -moz-box-shadow:inset 0px 1px 0px 0px #cf866c;
-  -webkit-box-shadow:inset 0px 1px 0px 0px #cf866c;
-  box-shadow:inset 0px 1px 0px 0px #cf866c;
-  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #d0451b), color-stop(1, #bc3315));
-  background:-moz-linear-gradient(top, #d0451b 5%, #bc3315 100%);
-  background:-webkit-linear-gradient(top, #d0451b 5%, #bc3315 100%);
-  background:-o-linear-gradient(top, #d0451b 5%, #bc3315 100%);
-  background:-ms-linear-gradient(top, #d0451b 5%, #bc3315 100%);
-  background:linear-gradient(to bottom, #d0451b 5%, #bc3315 100%);
-  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#d0451b', endColorstr='#bc3315',GradientType=0);
-  background-color: #d0451b;
-  border:1px solid #942911;
-  text-shadow:0px 1px 0px #854629;
+  background-color: #eeeeee;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eeeeee), color-stop(100%, #cccccc));
+  background-image: -webkit-linear-gradient(top, #eeeeee, #cccccc);
+  background-image: -moz-linear-gradient(top, #eeeeee, #cccccc);
+  background-image: -ms-linear-gradient(top, #eeeeee, #cccccc);
+  background-image: -o-linear-gradient(top, #eeeeee, #cccccc);
+  background-image: linear-gradient(top, #eeeeee, #cccccc);
+  border: 1px solid #ccc;
 }
 .vq1:hover {
-  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #bc3315), color-stop(1, #d0451b));
-  background:-moz-linear-gradient(top, #bc3315 5%, #d0451b 100%);
-  background:-webkit-linear-gradient(top, #bc3315 5%, #d0451b 100%);
-  background:-o-linear-gradient(top, #bc3315 5%, #d0451b 100%);
-  background:-ms-linear-gradient(top, #bc3315 5%, #d0451b 100%);
-  background:linear-gradient(to bottom, #bc3315 5%, #d0451b 100%);
-  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#bc3315', endColorstr='#d0451b',GradientType=0);
-  background-color:#bc3315;
+  background-color: #dddddd;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #dddddd), color-stop(100%, #bbbbbb));
+  background-image: -webkit-linear-gradient(top, #dddddd, #bbbbbb);
+  background-image: -moz-linear-gradient(top, #dddddd, #bbbbbb);
+  background-image: -ms-linear-gradient(top, #dddddd, #bbbbbb);
+  background-image: -o-linear-gradient(top, #dddddd, #bbbbbb);
+  background-image: linear-gradient(top, #dddddd, #bbbbbb);
+  border: 1px solid #bbb;
+  border-bottom: 1px solid #999;
+}
+.vq1:active{
+  border: 1px solid #888;
+  -webkit-box-shadow: inset 0 0 8px 2px #888, 0 1px 0 0 #888;
+  box-shadow: inset 0 0 8px 2px #888, 0 1px 0 0 #888; 
 }
 .vq2 {
-  background-color: #FF5A36;
+  background-color: #eeeeee;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eeeeee), color-stop(100%, #cccccc));
+  background-image: -webkit-linear-gradient(top, #eeeeee, #cccccc);
+  background-image: -moz-linear-gradient(top, #eeeeee, #cccccc);
+  background-image: -ms-linear-gradient(top, #eeeeee, #cccccc);
+  background-image: -o-linear-gradient(top, #eeeeee, #cccccc);
+  background-image: linear-gradient(top, #eeeeee, #cccccc);
+  border: 1px solid #ccc;
+}
+.vq2:hover {
+  background-color: #dddddd;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #dddddd), color-stop(100%, #bbbbbb));
+  background-image: -webkit-linear-gradient(top, #dddddd, #bbbbbb);
+  background-image: -moz-linear-gradient(top, #dddddd, #bbbbbb);
+  background-image: -ms-linear-gradient(top, #dddddd, #bbbbbb);
+  background-image: -o-linear-gradient(top, #dddddd, #bbbbbb);
+  background-image: linear-gradient(top, #dddddd, #bbbbbb);
+  border: 1px solid #bbb;
+  border-bottom: 1px solid #999;
+}
+.vq2:active{
+  border: 1px solid #888;
+  -webkit-box-shadow: inset 0 0 8px 2px #888, 0 1px 0 0 #888;
+  box-shadow: inset 0 0 8px 2px #888, 0 1px 0 0 #888; 
 }
 .vq3 {
-  background-color: #FFC736;
+  background-color: #eeeeee;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eeeeee), color-stop(100%, #cccccc));
+  background-image: -webkit-linear-gradient(top, #eeeeee, #cccccc);
+  background-image: -moz-linear-gradient(top, #eeeeee, #cccccc);
+  background-image: -ms-linear-gradient(top, #eeeeee, #cccccc);
+  background-image: -o-linear-gradient(top, #eeeeee, #cccccc);
+  background-image: linear-gradient(top, #eeeeee, #cccccc);
+  border: 1px solid #ccc;
+}
+.vq3:hover {
+  background-color: #dddddd;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #dddddd), color-stop(100%, #bbbbbb));
+  background-image: -webkit-linear-gradient(top, #dddddd, #bbbbbb);
+  background-image: -moz-linear-gradient(top, #dddddd, #bbbbbb);
+  background-image: -ms-linear-gradient(top, #dddddd, #bbbbbb);
+  background-image: -o-linear-gradient(top, #dddddd, #bbbbbb);
+  background-image: linear-gradient(top, #dddddd, #bbbbbb);
+  border: 1px solid #bbb;
+  border-bottom: 1px solid #999;
+}
+.vq3:active{
+  border: 1px solid #888;
+  -webkit-box-shadow: inset 0 0 8px 2px #888, 0 1px 0 0 #888;
+  box-shadow: inset 0 0 8px 2px #888, 0 1px 0 0 #888;  
 }
 .vq4 {
-  background-color: #1FD37C;
+  background-color: #eeeeee;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eeeeee), color-stop(100%, #cccccc));
+  background-image: -webkit-linear-gradient(top, #eeeeee, #cccccc);
+  background-image: -moz-linear-gradient(top, #eeeeee, #cccccc);
+  background-image: -ms-linear-gradient(top, #eeeeee, #cccccc);
+  background-image: -o-linear-gradient(top, #eeeeee, #cccccc);
+  background-image: linear-gradient(top, #eeeeee, #cccccc);
+  border: 1px solid #ccc;
+}
+.vq4:hover {
+  backgroubackground-color: #dddddd;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #dddddd), color-stop(100%, #bbbbbb));
+  background-image: -webkit-linear-gradient(top, #dddddd, #bbbbbb);
+  background-image: -moz-linear-gradient(top, #dddddd, #bbbbbb);
+  background-image: -ms-linear-gradient(top, #dddddd, #bbbbbb);
+  background-image: -o-linear-gradient(top, #dddddd, #bbbbbb);
+  background-image: linear-gradient(top, #dddddd, #bbbbbb);
+  border: 1px solid #bbb;
+  border-bottom: 1px solid #999;
+}
+.vq4:active{
+  border: 1px solid #888;
+  -webkit-box-shadow: inset 0 0 8px 2px #888, 0 1px 0 0 #888;
+  box-shadow: inset 0 0 8px 2px #888, 0 1px 0 0 #888; 
 }
 .vq5 {
-  background-color: #00B15B;
+  background-color: #eeeeee;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eeeeee), color-stop(100%, #cccccc));
+  background-image: -webkit-linear-gradient(top, #eeeeee, #cccccc);
+  background-image: -moz-linear-gradient(top, #eeeeee, #cccccc);
+  background-image: -ms-linear-gradient(top, #eeeeee, #cccccc);
+  background-image: -o-linear-gradient(top, #eeeeee, #cccccc);
+  background-image: linear-gradient(top, #eeeeee, #cccccc);
+  border: 1px solid #ccc;
+}
+.vq5:hover {
+  background-color: #dddddd;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #dddddd), color-stop(100%, #bbbbbb));
+  background-image: -webkit-linear-gradient(top, #dddddd, #bbbbbb);
+  background-image: -moz-linear-gradient(top, #dddddd, #bbbbbb);
+  background-image: -ms-linear-gradient(top, #dddddd, #bbbbbb);
+  background-image: -o-linear-gradient(top, #dddddd, #bbbbbb);
+  background-image: linear-gradient(top, #dddddd, #bbbbbb);
+  border: 1px solid #bbb;
+  border-bottom: 1px solid #999;
+}
+.vq5:active{
+  border: 1px solid #888;
+  -webkit-box-shadow: inset 0 0 8px 2px #888, 0 1px 0 0 #888;
+  box-shadow: inset 0 0 8px 2px #888, 0 1px 0 0 #888; 
 }
 .vq-response button:active {
   position:relative;
@@ -621,7 +720,7 @@ figure img {
 }
 
 .floor::-webkit-scrollbar-thumb {
-    background: #bbb;
+    background: #aaa;
 }
 
 .floor::-webkit-scrollbar-thumb:hover {
