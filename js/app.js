@@ -1,5 +1,5 @@
 var ascensorInstance;
-$(window).ready(function() {
+$(document).ready(function() {
 
   var ascensor = $('#pagesWrapper').ascensor(
     {direction: 'x',
