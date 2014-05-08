@@ -1,6 +1,5 @@
-$(window).load(function(){
+$(document).ready(function(){
 
-  function setupPages() {
     // bind footer links
     $(".prev").on('click',function() {
       ascensorInstance.prev();
@@ -9,12 +8,6 @@ $(window).load(function(){
     $(".next").on('click',function() {
       ascensorInstance.next();
     });
-  }
-});
-
-$(document).ready(function(){
-
-    setupPages();
 
     var fontSize = 1;
 

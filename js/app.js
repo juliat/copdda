@@ -3,7 +3,7 @@ $(document).ready(function() {
 
   var ascensor = $('#pagesWrapper').ascensor(
     {direction: 'x',
-     height: '96%',
+     height: '100%',
      jump: true,
      ascensorFloorName: [
      //Intro
@@ -65,27 +65,23 @@ $(document).ready(function() {
 
   $(document).keydown(function(event){
 
-    if ((event.keyCode == 40) || (event.keyCode == 38)) {
+    if ((event.keyCode === 40) || (event.keyCode === 38)) {
 
       event.preventDefault();
       //down
-      if ((event.keyCode == 40) && (scrollPosition >0)) {
-        //move down 100px
+      if ((event.keyCode === 40)) {
         scrollPosition += 100;
       }
-      else {
-        //up
-        //move up 100px
+      // up
+      else if ((event.keyCode === 38) && (scrollPosition >0)) {
         scrollPosition -= 100;
       }
       $('.floor').stop().animate({ scrollTop: scrollPosition });
 
-    } else if (event.keycode == 39 || event.keycode == 37){
+    } else if (event.keyCode === 39 || event.keyCode === 37){
       //left or right
-
       //scroll back to the top
       $('.floor').scrollTop(0);
-
     }
   });
 });
