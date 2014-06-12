@@ -1,6 +1,6 @@
 /*
 Ascensor.js 
-version: 1.8.12 (2014-06-04)
+version: 1.8.10 (2014-03-09)
 description: Ascensor is a jquery plugin which aims to train and adapt content according to an elevator system
 repository: https://github.com/kirkas/Ascensor.js
 license: BSD
@@ -28,7 +28,6 @@ author: Léo Galley <contact@kirkas.ch>
     swipeNavigation: 'mobile-only',
     swipeVelocity: 0.7,
     wheelNavigation: false,
-    wheelNavigationDelay: 40,
   };
 
   /* Plugin instance */
@@ -263,7 +262,7 @@ author: Léo Galley <contact@kirkas.ch>
 
         var touchEvent = 'touchstart.ascensor touchend.ascensor touchcancel.ascensor';
 
-        // If mobile-only, only use touchstart/end event        
+        // If mobile-only, only use touchstart/end event				
         if (this.options.swipeNavigation !== 'mobile-only') touchEvent += ' mousedown.ascensor mouseup.ascensor';
 
         // Listen to touch event
@@ -273,7 +272,7 @@ author: Léo Galley <contact@kirkas.ch>
       }
     },
 
-    refresh: function()  {
+    refresh: function()  {
       this.nodeChildren = this.node.children(this.options.childType);
       this._positionElement();
     },
@@ -316,7 +315,7 @@ author: Léo Galley <contact@kirkas.ch>
 
       this.scrollTime = new Date().getTime();
 
-      if (!this.lastScrollTime || this.scrollTime - this.lastScrollTime > this.options.wheelNavigationDelay) {
+      if (!this.lastScrollTime || this.scrollTime - this.lastScrollTime > 40) {
         this.lastScrollTime = this.scrollTime;
         return;
       }
@@ -356,8 +355,8 @@ author: Léo Galley <contact@kirkas.ch>
 
           // Save time & final position for X/Y
           this.touchEndTime = new Date().getTime();
-          this.touchEndX = (event.type == 'touchend' ||  event.type == 'touchcancel') ? event.originalEvent.changedTouches[0].pageX : event.pageX;
-          this.touchEndY = (event.type == 'touchend' ||  event.type == 'touchcancel') ? event.originalEvent.changedTouches[0].pageY : event.pageY;
+          this.touchEndX = (event.type == 'touchend' ||  event.type == 'touchcancel') ? event.originalEvent.changedTouches[0].pageX : event.pageX;
+          this.touchEndY = (event.type == 'touchend' ||  event.type == 'touchcancel') ? event.originalEvent.changedTouches[0].pageY : event.pageY;
 
           // calculate distance, duration & velocity.
           var distanceX = this.touchStartX - this.touchEndX;
@@ -396,7 +395,7 @@ author: Léo Galley <contact@kirkas.ch>
 
       this.nodeChildren.css({
         'position': 'absolute',
-        'overflow': 'auto',
+        'overflow': 'scroll',
         'top': '0',
         'left': '0',
         'width': '100%',
@@ -565,12 +564,12 @@ author: Léo Galley <contact@kirkas.ch>
     /* Helper to generate animation settings */
     _getAnimationSettings: function(floor) {
       var self = this;
-      var saveFloorActive = self.floorActive;
+
       // Create animation setting object
       var animationSettings = {
         property: {},
         callback: function() {
-          self._emitEvent('scrollEnd', saveFloorActive, floor);
+          self._emitEvent('scrollEnd', self.floorActive, floor);
           self._updateHash(floor);
         },
         defaults: {}
@@ -582,7 +581,7 @@ author: Léo Galley <contact@kirkas.ch>
       var secondAnimationSettings = {
         property: {},
         callback: function() {
-          self._emitEvent('scrollEnd', saveFloorActive, floor);
+          self._emitEvent('scrollEnd', self.floorActive, floor);
           self._updateHash(floor);
         }
       };
@@ -598,7 +597,7 @@ author: Léo Galley <contact@kirkas.ch>
       }
 
 
-      // If direction is horizontal 
+      // If direction is horizontal	
       // => set scrollleft property & return animationSettings
       else if (self.options.direction === 'x') {
         animationSettings.property.scrollLeft = floor * self.NW;
@@ -702,8 +701,8 @@ author: Léo Galley <contact@kirkas.ch>
 
       // If direction is x or x, and 
       // direction match, use prev/next
-      if ((self.options.direction == 'y' && direction == 'down') ||  (self.options.direction == 'x' && direction == 'right')) return self.next();
-      if ((self.options.direction == 'y' && direction == 'up') ||  (self.options.direction == 'x' && direction == 'left')) return self.prev();
+      if ((self.options.direction == 'y' && direction == 'down') ||  (self.options.direction == 'x' && direction == 'right')) return self.next();
+      if ((self.options.direction == 'y' && direction == 'up') ||  (self.options.direction == 'x' && direction == 'left')) return self.prev();
 
 
       if (self.directionIsArray) {
@@ -720,9 +719,9 @@ author: Léo Galley <contact@kirkas.ch>
         if (isTrue(self.options.jump) && isNumber(closestFloor)) return self.scrollToFloor(closestFloor);
 
         // If loop is set to true, use
-        //  the furthest floor
+        //	the furthest floor
         var furthestFloor = floorObject.furthest[direction];
-        if (isNumber(furthestFloor) && (isTrue(self.options.loop) || (directionIsHorizontal &&  self.options.loop == 'loop-x') ||  (directionIsVertical && self.options.loop == 'loop-y'))) {
+        if (isNumber(furthestFloor) && (isTrue(self.options.loop) || (directionIsHorizontal &&  self.options.loop == 'loop-x') ||  (directionIsVertical && self.options.loop == 'loop-y'))) {
           return self.scrollToFloor(furthestFloor);
         }
 
@@ -751,7 +750,7 @@ author: Léo Galley <contact@kirkas.ch>
 
 
     /* Helper to get the direct appending floor in one precise direction direction */
-    _getDirectFloorIndex: function(DA, floorIndex, direction)  {
+    _getDirectFloorIndex: function(DA, floorIndex, direction)  {
       var self = this;
 
       // Create floor target array base on floorobject
@@ -798,7 +797,7 @@ author: Léo Galley <contact@kirkas.ch>
     },
 
     /* Helper to get the closest floor in one precise direction direction */
-    _getClosestFloorIndex: function(DA, floorIndex, direction, level)  {
+    _getClosestFloorIndex: function(DA, floorIndex, direction, level)  {
       var self = this;
 
       level = level || 0;
@@ -820,11 +819,11 @@ author: Léo Galley <contact@kirkas.ch>
 
           // If direction is foward (right or down) and the value is bigger than goal 
           // of if direction is backward (left or up) and the value is smaller than the goal
-          if (((direction == 'right' || direction == 'down') && map[axis] > goal) ||  ((direction == 'left' || direction == 'up') && map[axis] < goal)) {
+          if (((direction == 'right' || direction == 'down') && map[axis] > goal) ||  ((direction == 'left' || direction == 'up') && map[axis] < goal)) {
 
 
             // No previous value set or if the current
-            // value is smaller than the previous one          
+            // value is smaller than the previous one					 
             if (!closestMap || Math.abs(map[axis] - goal) < Math.abs(closestMap[axis])) {
               closestIndex = index;
               closestMap = map;
