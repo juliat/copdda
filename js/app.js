@@ -31,6 +31,7 @@ $(document).ready(function() {
      'lungTransplantAdvantagesChances',
      'lungTransplantDisadvantagesPlaylist',
      'lungTransplantDisadvantagesChances',
+     'lungTransplantLongTerm',
      'lungTransplantSummaryTable',
 
      //Values Quiz
